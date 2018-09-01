@@ -17,4 +17,5 @@
       Hardeep Shoker
   </author>
 
+    <preference name="orientation"  value="landscape"></preference>
 </widget>
