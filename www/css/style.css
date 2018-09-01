@@ -1,0 +1,161 @@
+#name{
+/*    font-size: 90px;*/
+    font-size: 9vw;
+    display: inline;
+    text-align: right;
+    line-height:75%;
+    margin-right: 10%;
+/*    margin-top: 10%;*/
+    float: right;
+    color: darkred
+/*    writing-mode: tb-rl; */
+}
+#TextContact{
+    line-height: 90%;
+}
+
+h2 {
+    width: 100%;
+    text-align:center;
+    padding-top: 2%;
+}
+p{
+    width: 100%;
+    text-align:center;
+    color: darkorange;
+/*    padding-top: 2%;*/
+}
+.Carte{
+    border: solid;
+    
+/*
+    -webkit-box-shadow: 2px 2px 74px -8px rgba(8,8,8,1);
+    -moz-box-shadow: 2px 2px 74px -8px rgba(8,8,8,1);
+    box-shadow: 2px 2px 74px -8px rgba(8,8,8,1);
+*/
+/*box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;*/
+    border-radius: 2%;
+/*    background-image: url("Background_V4.png");*/
+/*
+    background-repeat:repeat-y;
+    background-position:center center;
+    background-attachment:scroll;
+    background-size:100% 100%;
+*/
+}
+.listeMarchands{
+/*    height: 200px;*/
+    background-color: #cccccc;
+    background-image: linear-gradient(#f2f2f2, #ffe9e1);
+    position: relative;
+    
+    min-height: 200px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    
+/*
+-webkit-box-shadow: 10px 10px 5px 0px rgba(189,185,189,1);
+-moz-box-shadow: 10px 10px 5px 0px rgba(189,185,189,1);
+box-shadow: 10px 10px 5px 0px rgba(189,185,189,1);
+*/
+}
+
+.logo{
+/*
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+*/
+}
+/*
+img
+{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto auto;
+}
+*/
+/*
+.arnold{
+    background-image: url("logoMarchands/logo-decoration-arnold.png");
+    background-repeat:repeat-y;
+    background-position:center center;
+    background-attachment:scroll;
+    background-size:100% 100%;
+}
+*/
+
+#compagny{
+/*    font-size: 50px;*/
+    font-size: 7vw;
+    text-align: right;
+    margin-right: 10%;
+    color:darkslateblue
+}
+
+#expireDate{
+    color: black;
+    float: right;
+}
+.ui-content{
+/*        padding-top: 40px;*/
+        padding: 0.2em 5em 1em 5em;
+        background-image: url("Background_V4.png");
+        background-repeat:repeat-y;
+    background-position:center center;
+    background-attachment:scroll;
+    background-size:100% 100%;
+
+}
+
+.ui-page { 
+    background:#ffffff;
+}
+
+.mainGrid{
+    display: grid;
+    grid-template-columns: 100%;
+    padding: 0.5em;
+    grid-column-gap: 10px;
+}
+
+.MyGrid{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    padding: 0.5em;
+    grid-column-gap: 5px;
+}
+
+@media screen and (orientation:portrait) {
+    // CSS applied when the device is in portrait mode
+    #name{
+        font-size: 29px;
+        color: aqua;
+/*    writing-mode: tb-rl; */
+    }
+/*
+    .listeMarchands{
+        height: 500px;
+
+    }
+*/
+/*
+    .logo{
+       position: absolute;
+        bottom: 10px;
+    }
+*/
+    h1{
+      font-size: 24px;
+    }
+}
+
+@media screen and (orientation:landscape) {
+    // CSS applied when the device is in landscape mode
+    #name{
+        font-size: 29px;
+        color: crimson
+/*    writing-mode: tb-rl; */
+}
+}
