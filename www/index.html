@@ -27,9 +27,9 @@
     <title>Carte de membre virtuelle</title>
     
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.css" />
-    <script src="http://code.jquery.com/jquery-2.1.4.js"></script>
-    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     
 </head>
 <body>
@@ -224,7 +224,9 @@
         <a data-rel="forward" data-icon="forward" href="#page3"> liste des marchands</a>
     </div> <!-- header -->
     
-    <div data-role="content">
+<!--    this should not be used-->
+<!--    <div data-role="content">--> 
+               <div role="main" class="ui-content">
         <div class="Carte"> 
             <h2> Carte de membre </h2> <br>
             <div class="mainGrid">
@@ -259,7 +261,8 @@
     <div data-role="header" data-theme="a" data-position="fixed".>  
         <h1>Liste des marchands</h1>
         <a data-rel="back" data-icon="back">Retour</a>    </div> <!-- header -->
-    <div data-role="content">
+<!--    <div data-role="content">-->
+           <div role="main" class="ui-content">
 <!--        Pour le test-->
 <!--        ============-->
         <div >
@@ -461,7 +464,8 @@ ou
 <div data-role="page" id="page4">
     <div data-role="header" data-theme="a">  
     </div> <!-- header -->
-    <div data-role="content">
+<!--    <div data-role="content">-->
+       <div role="main" class="ui-content">
             <a data-rel="back" data-icon="back"> Back</a>
         <iframe class="highcharts-iframe" src="https://cloud.highcharts.com/embed/rksMCihz7/" style="border: 0; width: 100%; height: 500px"></iframe>    
     </div> <!-- Content -->
