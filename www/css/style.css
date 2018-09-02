@@ -101,7 +101,7 @@ img
 .ui-content{
 /*        padding-top: 40px;*/
         padding: 0.2em 5em 1em 5em;
-        background-image: url("Background_V4.png");
+        background-image: url("Background.png");
         background-repeat:repeat-y;
     background-position:center center;
     background-attachment:scroll;
