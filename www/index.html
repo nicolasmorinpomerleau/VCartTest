@@ -128,12 +128,12 @@
     }
 
     function handleClientLoad() {
-      gapi.load('client:auth2', initClient);
+//      gapi.load('client:auth2', initClient);
     }
 
     function updateSignInStatus() {
 //      if (isSignedIn) {
-        makeApiCall();
+//        makeApiCall();
 //      }
     }
 
@@ -146,37 +146,37 @@
     }
         
     function Validate(){
-        var contact = {email, code};
+//        var contact = {email, code};
         
-         contact.email = document.getElementById('email').value;
-         contact.code  = document.getElementById('code').value;
+         email = document.getElementById('email').value;
+         code  = document.getElementById('code').value;
         console.log("il a récupéré les paramèetres");
         
         $.ajax({
-            url: 'http://localhost:4000/check',
-//            url:'https://5m1qfi37ie.execute-api.eu-west-1.amazonaws.com/Dev/emailCode',
+//            url: 'http://localhost:4000/check',
+            url:'https://5m1qfi37ie.execute-api.eu-west-1.amazonaws.com/Dev/emailCode',
 //         url: '192.168.1.66/check',
             type: 'POST',
             dataType: 'json',
             contentType: 'application/json',
-            data: JSON.stringify({answers: contact}),
+            data: JSON.stringify({email, code}),
             
             success: function(res) {
                 console.log("il valide le retour du serveur");
-                if(res.answer.reponse == "OK"){
+                if(res.answer == 'userFind'){
                     nameID               = document.getElementById("name");
                     nameID.innerHTML     = res.answer.name;
                     compagnyID           = document.getElementById("compagny");
                     compagnyID.innerHTML = res.answer.compagny;
     //                Save user data in local Storage
-                    localStorage.Email    = contact.email;
-                    localStorage.code     = contact.code;
+                    localStorage.Email    = email;
+                    localStorage.code     = code;
                     localStorage.compagny = res.answer.compagny;
                     localStorage.name     = res.answer.name;
 
                     window.location.href = "#page2";
                 }
-                else if(res.answer.reponse == "NOK"){
+                else if(res.answer == 'userNotFind'){
                     window.location.href = "#page3";
                     console.log("Affiche Page 3");
                 }
