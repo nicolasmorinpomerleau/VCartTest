@@ -155,7 +155,7 @@
         
          email = document.getElementById('email').value;
          code  = document.getElementById('code').value;
-        console.log("il a récupéré les paramèetres");
+       alert("il a récupéré les paramèetres");
         
         $.ajax({
 //            url: 'http://localhost:4000/check',
@@ -187,7 +187,7 @@
                 }
             },
             error: function(res) {
-                alert("Aie Aie, il y a une couille quelque part..! "+Error);
+                alert("Aie Aie, il y a une couille quelque part..! "+res);
             }
         });
     }
