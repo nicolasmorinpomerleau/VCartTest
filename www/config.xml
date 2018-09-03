@@ -13,9 +13,9 @@
       Test from Abou
   </description>
 
-  <author href="https://build.phonegap.com" email="surt@pho.com">
+  <author href="https://build.phonegap.com" email="support@phonegap.com">
       Hardeep Shoker
   </author>
-<icon src="icon.png" />
+
     <preference name="orientation"  value="landscape"></preference>
 </widget>
