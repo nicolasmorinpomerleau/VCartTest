@@ -9,6 +9,9 @@
 
   <name>Ma VCart Test V1.0.0</name>
 <access origin="*" />
+    <allow-intent href="http://*/*" />
+<allow-intent href="https://*/*" />
+    
   <description>
       Test from Abou
   </description>
