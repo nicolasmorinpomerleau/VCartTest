@@ -4,11 +4,11 @@
     id          = "com.phonegap.example"
     versionCode = "10"
     version     = "1.0.0" >
+<access origin="https://5m1qfi37ie.execute-api.eu-west-1.amazonaws.com/Dev/emailCode"/>
 
 <!-- versionCode is optional and Android only -->
-<plugin name="cordova-plugin-whitelist" value="npm"/>
+<plugin name="cordova-plugin-whitelist" source="npm"/>
   <name>Ma VCart Test V1.0.0</name>
-<access origin="*" />
     <allow-intent href="http://*/*" />
 <allow-intent href="https://*/*" />
     
