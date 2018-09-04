@@ -8,7 +8,7 @@
 <!-- versionCode is optional and Android only -->
 
   <name>Ma VCart Test V1.0.0</name>
-
+<access origin="*" />
   <description>
       Test from Abou
   </description>
