@@ -132,7 +132,7 @@ img
     display: grid;
     grid-template-rows: 50% 50%;
     padding: 1em 0em 1.5em 1em;
-    grid-row-gap: 0.5px;
+    grid-row-gap: 0.5vw;
 }
 
 .MyGrid{
