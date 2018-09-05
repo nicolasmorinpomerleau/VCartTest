@@ -46,10 +46,7 @@
               }
           });
         </script>
-        
         <script>
-
-      
     function Validate(){        
          email = document.getElementById('email').value;
          code  = document.getElementById('code').value;        
@@ -74,7 +71,6 @@
                     localStorage.code     = code;
                     localStorage.compagny = res.answer.compagny;
                     localStorage.name     = res.answer.name;
-
                     window.location.href = "#page2";
                 }
                 else if(res.answer == 'userNotFind'){
@@ -87,10 +83,7 @@
             }
         });
     }
-    </script>
-
-
-        
+    </script> 
     </div> <!-- Content -->
 </div><!-- /Page 1 -->
 
@@ -109,17 +102,24 @@
     
 <!--    this should not be used-->
 <!--    <div data-role="content"> -->
-     <div role="main" class="ui-content">
-        <div class="Carte"> 
-<!--            <h2> Carte de membre </h2> <br>-->
-            <div class="mainGrid">
-              <div class="container">
-                  <div id="TextContact"> 
-                  <label id="name"><h1></h1></label>
-                  <label id="compagny"><h1></h1></label>
-                  </div>
-                </div>
+     <div role="main" class="ui-content second">
+        <div class="Carte grid">
+            <div>
+                  <label id="Numero"><h5 style="padding-bottom:30px;">#1234</h5></label>
             </div>
+            <div class="grid2">
+                  <label id="name"><h1></h1></label>
+                  <label id="compagny"><h1></h1></label>            
+            </div>
+            <div></div>
+<!--            <h2> Carte de membre </h2> <br>-->
+<!--            <div class="mainGrid">-->
+<!--              <div class="container">-->
+<!--                  <div id="TextContact"> -->
+
+<!--                  </div>-->
+<!--                </div>-->
+<!--            </div>-->
 <!--            <p> Powered by mangoo</p>-->
         </div>
     </div> <!-- Content -->

@@ -1,7 +1,9 @@
 
+/*
 #TextContact{
     line-height: 90%;
 }
+*/
 
 h2 {
     width: 100%;
@@ -48,19 +50,32 @@ img
   text-align: right;
 }
 */
+#Numero{
+/*    text-align: right;    */
+    font-size: 3vw;
+    position: relative;
+    float: right;
+    font-family: "Century Gothic",sans-serif;
+    color: gray;
+/*    height: 50%;*/
+/*    margin-bottom: 20px;*/
+}
+
 #name{
-    display: block;
+/*  display: inline-block;*/
+  text-align: right;    
     font-size: 4vw;
-    top: 15vw;
+/*    top: 15vw;*/
     position: relative;
     float: right;
     font-family: "Century Gothic",sans-serif
 }
 
 #compagny{
-    display: block;
+/*  display: inline-block;*/
+  text-align: right;
     font-size: 4vw;
-    top: 19vw;
+/*    top: 19vw;*/
     position: relative;
     float: right;
     font-family: "Century Gothic",sans-serif;
@@ -85,14 +100,17 @@ img
 }
 */
 
+/*
 #expireDate{
     font-size: 2vw;
     color: gray;
     float: right;
 }
-.ui-content{
+*/
+/*.ui-content{*/
+.second{
     padding: 0.2em 5em 1em 5em;
-    background-image: url("Carte%20de%20membre%20-%20Abou-2.jpg");
+    background-image: url("Carte%20de%20membre%20-%20Abou-2-V2.jpg");
     background-repeat:repeat-y;
     background-position:center center;
     background-attachment:scroll;
@@ -103,11 +121,18 @@ img
     background:#ffffff;
 }
 
-.mainGrid{
+.grid{
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-rows: 28% 28% 34%;
     padding: 0.5em;
-    grid-column-gap: 10px;
+    grid-row-gap: 2px;
+}
+
+.grid2{
+    display: grid;
+    grid-template-rows: 50% 50%;
+    padding: 1em 0em 1.5em 1em;
+    grid-row-gap: 0.5px;
 }
 
 .MyGrid{
