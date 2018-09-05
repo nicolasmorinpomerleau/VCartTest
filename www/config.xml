@@ -8,7 +8,7 @@
 
 <!-- versionCode is optional and Android only -->
 <plugin name="cordova-plugin-whitelist" source="npm"/>
-<name>Ma VCart Test V1.0.0</name>
+<name>Chambre de commerce Saint-Georges</name>
 <allow-intent href="http://*/*" />
 <allow-intent href="https://*/*" />
  <icon src="icon_V2.png"/>   
