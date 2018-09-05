@@ -8,10 +8,10 @@
 
 <!-- versionCode is optional and Android only -->
 <plugin name="cordova-plugin-whitelist" source="npm"/>
-  <name>Ma VCart Test V1.0.0</name>
-    <allow-intent href="http://*/*" />
+<name>Ma VCart Test V1.0.0</name>
+<allow-intent href="http://*/*" />
 <allow-intent href="https://*/*" />
-    
+ <icon src="icon_V2.png"/>   
   <description>
       Test from Abou
   </description>
