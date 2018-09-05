@@ -21,7 +21,7 @@
 -->
 <div data-role="page" id="page1">
     <div data-role="header" data-theme="a">
-        <h1> Titre de mon App</h1>
+        <h1> Identification de la carte de membre</h1>
     </div> <!-- header -->
     <div role="main" data-role="content">
         <form >
@@ -47,6 +47,7 @@
           });
         </script>
         <script>
+    var tentative = 0;
     function Validate(){        
          email = document.getElementById('email').value;
          code  = document.getElementById('code').value;        
@@ -60,7 +61,6 @@
             data: JSON.stringify({email, code}),
             
             success: function(res) {
-                console.log("il valide le retour du serveur");
                 if(res.answer == 'userFind'){
                     nameID               = document.getElementById("name");
                     nameID.innerHTML     = res.answer.name;
@@ -74,12 +74,19 @@
                     window.location.href = "#page2";
                 }
                 else if(res.answer == 'userNotFind'){
-                    window.location.href = "#page3";
-                    console.log("Affiche Page 3");
+                    tentative = tentative +1;
+                    nouveuMessage = document.getElementById('message');
+                    if(tentative < 2){
+                        nouveuMessage.innerHTML = "Le Courriel ou le code n'est pas correcte, veuillez rentrer de nouveau.";
+                    }
+                    else{
+                        nouveuMessage.innerHTML = "Veuillez contacter l'administration de la Chambre de commerce.";
+                        tentative = 0;
+                    }
                 }
             },
             error: function(res) {
-                alert("error: "+res);
+                alert("Erreur de lecture: "+ res.message);
             }
         });
     }
