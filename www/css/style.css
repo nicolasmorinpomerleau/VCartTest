@@ -15,22 +15,7 @@ p{
 /*    padding-top: 2%;*/
 }
 .Carte{
-    border: solid;
-    
-/*
-    -webkit-box-shadow: 2px 2px 74px -8px rgba(8,8,8,1);
-    -moz-box-shadow: 2px 2px 74px -8px rgba(8,8,8,1);
-    box-shadow: 2px 2px 74px -8px rgba(8,8,8,1);
-*/
-/*box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;*/
-    border-radius: 2%;
-/*    background-image: url("Background_V4.png");*/
-/*
-    background-repeat:repeat-y;
-    background-position:center center;
-    background-attachment:scroll;
-    background-size:100% 100%;
-*/
+    height: 43vw;
 }
 .listeMarchands{
     background-color: #cccccc;
