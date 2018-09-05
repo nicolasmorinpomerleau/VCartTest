@@ -1,24 +1,4 @@
 
-<!--
-************************************************************
-            Pour le test de PhoneGap
-************************************************************
--->
-
-<!--
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-        <title>Blank App</title>
-    </head>
-    <body>
-        <script type="text/javascript" src="cordova.js"></script>
-        <h4> hi</h4>
-    </body>
-</html>
--->
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,13 +7,7 @@
     <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
 
     <title>Carte de membre virtuelle</title>
-    
-<!--    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />-->
-        <link rel="stylesheet" href="css/style.css" />
-
-<!--    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>-->
-<!--    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
-    
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet"  href="css/jquery.mobile-1.4.5.min.css"/>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.mobile-1.4.5.min.js"></script>
@@ -68,93 +42,15 @@
                 window.location.href = "#page2";
                 }
               else{
-                    window.location.href = "#page1";
+                window.location.href = "#page1";
               }
           });
         </script>
         
         <script>
-        var ContactList;
-        var find = false;
-        var Contact = {
-            name : '',
-            compagny : ''
-        }
-    function makeApiCall() {
-      var params = {
-        // The ID of the spreadsheet to retrieve data from.
-        spreadsheetId: '1aY4VBrb_J2f_vtNX9E14yrB6eEDblqYsiURtIdCNekI',  // TODO: Update placeholder value.
 
-        // The A1 notation of the values to retrieve.
-        range: 'Sheet1',  // TODO: Update placeholder value.
-
-        // How values should be represented in the output.
-        // The default render option is ValueRenderOption.FORMATTED_VALUE.
-//        valueRenderOption: '',  // TODO: Update placeholder value.
-
-        // How dates, times, and durations should be represented in the output.
-        // This is ignored if value_render_option is
-        // FORMATTED_VALUE.
-        // The default dateTime render option is [DateTimeRenderOption.SERIAL_NUMBER].
-//        dateTimeRenderOption: '',  // TODO: Update placeholder value.
-      };
-
-      var request = gapi.client.sheets.spreadsheets.values.get(params);
-      request.then(function(response) {
-        // TODO: Change code below to process the `response` object:
-        ContactList = response.result.values;
-          console.log(response.result);
-      }, function(reason) {
-        console.error('error: ' + reason.result.error.message);
-      });
-    }
-
-    function initClient() {
-      var API_KEY = 'AIzaSyBORppgBx8YSqcR-xx09atWCnKDWWVKyns';  // TODO: Update placeholder with desired API key.
-
-      var CLIENT_ID = '886748529811-dimrr7ack0uma6f146oipg8hlnv1e0on.apps.googleusercontent.com';  // TODO: Update placeholder with desired client ID.
-
-      // TODO: Authorize using one of the following scopes:
-      //   'https://www.googleapis.com/auth/drive'
-      //   'https://www.googleapis.com/auth/drive.file'
-      //   'https://www.googleapis.com/auth/drive.readonly'
-      //   'https://www.googleapis.com/auth/spreadsheets'
-      //   'https://www.googleapis.com/auth/spreadsheets.readonly'
-      var SCOPE = 'https://www.googleapis.com/auth/spreadsheets.readonly';
-
-      gapi.client.init({
-        'apiKey': API_KEY,
-        'clientId': CLIENT_ID,
-        'scope': SCOPE,
-        'discoveryDocs': ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
-      }).then(function() {
-        gapi.auth2.getAuthInstance().isSignedIn.listen(updateSignInStatus);
-          updateSignInStatus();
-//        updateSignInStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
-      });
-    }
-
-    function handleClientLoad() {
-//      gapi.load('client:auth2', initClient);
-    }
-
-    function updateSignInStatus() {
-//      if (isSignedIn) {
-//        makeApiCall();
-//      }
-    }
-
-    function handleSignInClick(event) {
-      gapi.auth2.getAuthInstance().signIn();
-    }
-
-    function handleSignOutClick(event) {
-      gapi.auth2.getAuthInstance().signOut();
-    }
-        
-    function Validate(){
-//        var contact = {email, code};
-        
+      
+    function Validate(){        
          email = document.getElementById('email').value;
          code  = document.getElementById('code').value;
        alert("il a récupéré les paramèetres");
@@ -189,33 +85,15 @@
                 }
             },
             error: function(res) {
-                alert("Aie Aie, il y a une couille quelque part..! "+res);
+                alert("error: "+res);
             }
         });
     }
     </script>
 
-<!--
-    <script async defer src="https://apis.google.com/js/api.js"
-      onload="this.onload=function(){};handleClientLoad()"
-      onreadystatechange="if (this.readyState === 'complete') this.onload()">
-    </script>
--->
+
         
-<!--        <p> Content</p>-->
     </div> <!-- Content -->
-    
-<!--
-    <div data-role="footer" data-theme="e" data-position="fixed" data-id="foot">
-        <div data-role="navbar" >
-            <ul>
-                <li><a class="ui-btn-active ui-state-persist" href="#page1" data-role="buton" data-icon="star"> Page1</a></li>
-                <li><a href="#page2" data-role="buton" data-icon="grid"> Page2</a></li> 
-                <li><a href="#page3" data-role="buton"> Popup</a></li> 
-            </ul>
-        </div>
-    </div> 
--->
 </div><!-- /Page 1 -->
 
 <!--
@@ -237,20 +115,15 @@
         <div class="Carte"> 
             <h2> Carte de membre </h2> <br>
             <div class="mainGrid">
-<!--              <img class="rotate" src="img/logo.png" alt="Avatar" style="width:100%;padding-top: 5%;">-->
               <div class="container">
                   <div id="TextContact"> 
-                  <label class="rotate forName" for="text-16" id="name"><h1></h1></label> 
-                  <h4 class="rotate"><label  for="text-12" id="compagny"></label></h4> 
+                  <label id="name"><h1></h1></label> 
+                  <h4><label id="compagny"></label></h4> 
                   <div style="display: inline;"> 
                       <hr>
                       <h4 style="color: darkgray;     float: right;
     padding-right: 10%;"> Date d'expiration:<label for="text-12" id="expireDate"> 31 août 2019 </label></h4>
                   </div><br>
-                      <p style="color: black !important; bottom: 2px">http://www.ccstgeorges.com/</p>
-                      <div >
-                       <img style="position: absolute;     bottom: 15%; height: 100px;" src="css/logo_CC.png">
-                      </div>
                   </div>
                 </div>
             </div>

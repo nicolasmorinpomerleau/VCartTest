@@ -1,15 +1,4 @@
-#name{
-/*    font-size: 90px;*/
-    font-size: 9vw;
-    display: inline;
-    text-align: right;
-    line-height:75%;
-    margin-right: 10%;
-/*    margin-top: 10%;*/
-    float: right;
-    color: darkred
-/*    writing-mode: tb-rl; */
-}
+
 #TextContact{
     line-height: 90%;
 }
@@ -44,20 +33,12 @@ p{
 */
 }
 .listeMarchands{
-/*    height: 200px;*/
     background-color: #cccccc;
     background-image: linear-gradient(#f2f2f2, #ffe9e1);
     position: relative;
-    
     min-height: 200px;
     overflow: hidden;
     margin-bottom: 10px;
-    
-/*
--webkit-box-shadow: 10px 10px 5px 0px rgba(189,185,189,1);
--moz-box-shadow: 10px 10px 5px 0px rgba(189,185,189,1);
-box-shadow: 10px 10px 5px 0px rgba(189,185,189,1);
-*/
 }
 
 .logo{
@@ -76,37 +57,37 @@ img
     margin: auto auto;
 }
 */
-/*
-.arnold{
-    background-image: url("logoMarchands/logo-decoration-arnold.png");
+
+#name{
+    font-size: 4vw;
+    display: inline;
+    text-align: right;
+    line-height:75%;
+    margin-right: 10%;
+    float: right;
+    font-family: "Century Gothic",sans-serif
+}
+
+#compagny{
+    font-size: 4vw;
+    text-align: right;
+    margin-right: 10%;
+    font-family: "Century Gothic",sans-serif;
+    color: gray;
+}
+
+#expireDate{
+    font-size: 2vw;
+    color: gray;
+    float: right;
+}
+.ui-content{
+    padding: 0.2em 5em 1em 5em;
+    background-image: url("Carte%20de%20membre%20-%20Abou-2.jpg");
     background-repeat:repeat-y;
     background-position:center center;
     background-attachment:scroll;
     background-size:100% 100%;
-}
-*/
-
-#compagny{
-/*    font-size: 50px;*/
-    font-size: 7vw;
-    text-align: right;
-    margin-right: 10%;
-    color:darkslateblue
-}
-
-#expireDate{
-    color: black;
-    float: right;
-}
-.ui-content{
-/*        padding-top: 40px;*/
-        padding: 0.2em 5em 1em 5em;
-        background-image: url("Background.png");
-        background-repeat:repeat-y;
-    background-position:center center;
-    background-attachment:scroll;
-    background-size:100% 100%;
-
 }
 
 .ui-page { 
@@ -127,35 +108,22 @@ img
     grid-column-gap: 5px;
 }
 
+/*
 @media screen and (orientation:portrait) {
-    // CSS applied when the device is in portrait mode
     #name{
         font-size: 29px;
         color: aqua;
-/*    writing-mode: tb-rl; */
     }
-/*
-    .listeMarchands{
-        height: 500px;
-
-    }
-*/
-/*
-    .logo{
-       position: absolute;
-        bottom: 10px;
-    }
-*/
     h1{
       font-size: 24px;
     }
 }
+*/
 
+/*
 @media screen and (orientation:landscape) {
-    // CSS applied when the device is in landscape mode
     #name{
         font-size: 29px;
         color: crimson
-/*    writing-mode: tb-rl; */
 }
-}
+}*/
