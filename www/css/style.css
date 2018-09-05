@@ -134,6 +134,11 @@ img
     padding: 1em 0em 1.5em 1em;
     grid-row-gap: 0.5vw;
 }
+.GridButtons{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    width: 100%;
+}
 
 .MyGrid{
     display: grid;

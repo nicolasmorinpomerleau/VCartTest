@@ -104,7 +104,7 @@
         <h1> </h1>
 <!--        <a data-rel="back" data-icon="back"> Back</a>-->
         <a data-rel="forward" data-icon="forward" onclick= "localStorage.clear()"> Erase Localstorage</a>
-        <a data-rel="forward" data-icon="forward" href="#page3"> liste des marchands</a>
+        <a data-id="persistent" href="#Restauration" data-transition="slide"> liste des marchands</a>
     </div> <!-- header -->
     
 <!--    this should not be used-->
@@ -118,16 +118,6 @@
                   <label id="name"><h1></h1></label>
                   <label id="compagny"><h1></h1></label>            
             </div>
-            <div></div>
-<!--            <h2> Carte de membre </h2> <br>-->
-<!--            <div class="mainGrid">-->
-<!--              <div class="container">-->
-<!--                  <div id="TextContact"> -->
-
-<!--                  </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <p> Powered by mangoo</p>-->
         </div>
     </div> <!-- Content -->
 </div> <!-- /Page2 -->
@@ -137,48 +127,26 @@
              page 3
     ****************************
 -->
-<div data-role="page" id="page3">
-    <div data-role="header" data-theme="a" data-position="fixed".>  
-        <h1>Liste des marchands</h1>
-        <a data-rel="back" data-icon="back">Retour</a>    </div> <!-- header -->
-<!--    <div data-role="content">-->
-           <div role="main">
-<!--        Pour le test-->
-<!--        ============-->
-        <div >
-            <div class="MyGrid">
-            <a href="http://www.conceptionimagix.com/" target="_blank"  align="center"> <h2>Conception IMAGIX</h2></a><br>
-                            <img class="logo" src="css/logoMarchands/Imagix_V2.png" >
+<div data-role="page" id="Restauration"> 
+<div data-role="header" style="overflow:hidden;" data-id="persistent" data-position="fixed">
+<h1>Liste des marchands</h1>
+<!--                <a data-rel="back" data-icon="back">Retour</a>  -->
+    <a  href="#page2">Carte</a>
+    <div data-role="navbar"> 
+        <ul>
+            <li><a href="#Restauration" class="ui-button-active">Restauration</a></li>
+            <li><a href="#Service" data-transition="slide">Service</a></li>
+            <li><a href="#Immobilier" data-transition="slide">Immobilier</a></li>
+            <li><a href="#Autres" data-transition="slide">Autres</a></li>
+        </ul>
+    </div>
+</div><!-- /header -->
+ 
+    <!--    *************** Restauration page ***************-->
+<!--    *************************************************-->
 
-            </div>
-            <h1> <span style="color: red; font-size: 50px">10%</span> de rabais valide au centre de photocopies</h1>
-        <p style="color: black !important" >Pour l’impression numérique, grand format et graphisme. Détails sur place.</p>
-        <p>13865, boul. Lacroix
-        Saint-Georges
-        418.227.7800
-            </p>
-        </div>
-        <hr>
         <div>
-            <div class="MyGrid">
-            <img src="css/logoMarchands/CardioFeminin.png" >
-                <a href="http://www.cardiofeminin.com/" target="_blank" align="center"> <h2 >Cardio Féminin inc.</h2> </a>
-            </div>
-            <h1><span style="color: red; font-size: 50px">15%</span> de rabais sur entraînement, infrathérapie, bronzage</h1>
-        <p>300, 107e Rue
-            Saint-Georges
-            418.228.4211
-            </p>
-            <p>Rencontre GRATUITE pour plan nutritionnel
-               Ne peux être jumelé à une autre promotion.</p>
-        </div> 
-        <hr>
-<!--        Pour le test-->
-<!--        ============-->
-        <div>
-<!--            <div class="MyGrid">-->
             <h1 align="center"> Café Royal enr.</h1>
-<!--            </div>-->
             <h1><span style="color: red; font-size: 50px">10%</span> d'escompte sur le menu à la carte.</h1>
             <p>12015, 2e Avenue
             Saint-Georges
@@ -186,34 +154,16 @@
         </div>
         <hr>
         <div>
-            <div class="MyGrid">
-            <img class="logo" src="css/logoMarchands/Imagix_V2.png" >
-            <a href="http://www.conceptionimagix.com/" target="_blank"  align="center"> <h2>Conception IMAGIX</h2></a>
-            </div>
-            <h1><span style="color: red; font-size: 50px">10%</span> de rabais valide au centre de photocopies</h1>
-        <p style="color: black !important" >Pour l’impression numérique, grand format et graphisme. Détails sur place.</p>
-        <p>13865, boul. Lacroix
-        Saint-Georges
-        418.227.7800
+            <a href="https://www.cage.ca/saint-georges-de-beauce" target="_blank"  align="center"><h1>La Cage de Saint-Georges, Brasserie sportive</h1></a>
+            <h2>Achetez une assiette à prix régulier et obtenez la deuxième à 50%.</h2>
+            <img src="css/logoMarchands/LaCageBrasserie.png" >
+            <p>455, 90e Rue
+                Saint-Georges
+                418.227.8181
             </p>
-        </div>
-        <hr>
-        <div>
-            <div class="MyGrid">
-            <img src="css/logoMarchands/logo-decoration-arnold.png" >
-                <a href="http://www.decorationarnold.com/" target="_blank" align="center"><h2 align="center"> Décoration Arnold inc.</h2> </a>
-            </div>
-<!--
-            <div class="logo"> 
-            </div>
--->
-            <h1><span style="color: red; font-size: 50px">10%</span> d'escompte sur tous les produits offerts en magasin.</h1>
-            <p>15820, 6e Avenue
-            Saint-Georges
-            418.228.1224
-            </p>
-        </div>
-        <hr>
+            <p>Ne peut être jumelé à aucune autre promotion. Ne s'applique pas sur les déjeuners.</p>
+        </div>    
+    <hr>
         <div>
             <div class="MyGrid">
             <img src="css/logoMarchands/LaTableDuJ.png">
@@ -225,39 +175,7 @@
             418.227.0888
             </p>
             <p>Ne peut être jumelé à aucune autre promotion.</p>
-        </div> <hr>   
-    
-        <div>
-            <h1 align="center">Cardio Féminin inc.</h1>
-            <h2>15 % de rabais sur entraînement, infrathérapie, bronzage</h2>
-            <img src="css/logoMarchands/CardioFeminin.png" >
-        <p>300, 107e Rue
-            Saint-Georges
-            418.228.4211
-            </p>
-            <p>Rencontre GRATUITE pour plan nutritionnel
-               Ne peux être jumelé à une autre promotion.</p>
-        </div> 
-        <div>
-            <h1 align="center">Centre de location St-Georges</h1>
-            <h2>10% de rabais sur la location d'outillage. </h2>
-            <img src="css/logoMarchands/centredelocationstgeorges-logo.png" >
-            <p>16375, boul. Lacroix
-                Saint-Georges
-                418.227.9563
-            </p>
-            <p>Contactez le détaillant pour plus d'informations.</p>
-        </div> 
-        <div>
-            <a href="https://www.cage.ca/saint-georges-de-beauce" target="_blank"  align="center"><h1>La Cage de Saint-Georges, Brasserie sportive</h1></a>
-            <h2>Achetez une assiette à prix régulier et obtenez la deuxième à 50%.</h2>
-            <img src="css/logoMarchands/LaCageBrasserie.png" >
-            <p>455, 90e Rue
-                Saint-Georges
-                418.227.8181
-            </p>
-            <p>Ne peut être jumelé à aucune autre promotion. Ne s'applique pas sur les déjeuners.</p>
-        </div> 
+        </div> <hr>     
        <div>
             <a href="https://bostonpizza.com/fr/index.html?gclid=Cj0KCQjw2f7bBRDVARIsAAwYBBu1x7hl1tqLKX2hKMA3XxB812GRPPrysNyVrIAll411gXEGUVm9w2UaAifTEALw_wcB&gclsrc=aw.ds" target="_blank"  align="center"><h1>Boston Pizza St-Georges</h1></a>
             <h2>15% d'escompte sur tout le menu régulier.</h2>
@@ -332,10 +250,122 @@ ou
         <div>
             <h1 align="center">Terminal de transaction</h1>
             <h2>Taux préférentiels sur les transactions avec cartes de crédit Visa sur terminal de Global Payments et TD Canada Trust</h2>
-        </div>
+        </div>        
+    <div data-role="footer" data-type="footer" data-position="fixed"  data-id="persistent" style="overflow:hidden; text-align: center">
+    <hp style="text-align:center;">www.noterecorder.com</hp>
     </div> <!-- Content -->
-</div><!-- /Page 3 -->
+</div><!-- /Restauration -->
 
+
+    
+<!--    ***************   Service page    ***************-->
+<!--    *************************************************-->
+    <div data-role="page" id="Service">
+         <div data-role="header" style="overflow:hidden;"  data-id="persistent" data-position="fixed">
+            <h1>Liste des marchands</h1>
+            <a href="#page2">Carte</a>
+            <div data-role="navbar"> 
+                <ul>
+                    <li><a href="#Restauration" data-transition="slide">Restauration</a></li>
+                    <li><a href="#Service" class="ui-button-active">Service</a></li>
+                    <li><a href="#Immobilier" data-transition="slide">Immobilier</a></li>
+                    <li><a href="#Autres" data-transition="slide">Autres</a></li>
+                </ul>
+            </div>
+        </div><!-- /header -->
+        <div>
+            <div class="MyGrid">
+            <img class="logo" src="css/logoMarchands/Imagix_V2.png" >
+            <a href="http://www.conceptionimagix.com/" target="_blank"  align="center"> <h2>Conception IMAGIX</h2></a>
+            </div>
+            <h1><span style="color: red; font-size: 50px">10%</span> de rabais valide au centre de photocopies</h1>
+        <p style="color: black !important" >Pour l’impression numérique, grand format et graphisme. Détails sur place.</p>
+        <p>13865, boul. Lacroix
+        Saint-Georges
+        418.227.7800
+            </p>
+        </div>
+        <hr>
+        <div>
+            <h1 align="center">Centre de location St-Georges</h1>
+            <h2>10% de rabais sur la location d'outillage. </h2>
+            <img src="css/logoMarchands/centredelocationstgeorges-logo.png" >
+            <p>16375, boul. Lacroix
+                Saint-Georges
+                418.227.9563
+            </p>
+            <p>Contactez le détaillant pour plus d'informations.</p>
+        </div> 
+        <hr>
+        <div>
+            <div class="MyGrid">
+            <img src="css/logoMarchands/CardioFeminin.png" >
+                <a href="http://www.cardiofeminin.com/" target="_blank" align="center"> <h2 >Cardio Féminin inc.</h2> </a>
+            </div>
+            <h1><span style="color: red; font-size: 50px">15%</span> de rabais sur entraînement, infrathérapie, bronzage</h1>
+        <p>300, 107e Rue
+            Saint-Georges
+            418.228.4211
+            </p>
+            <p>Rencontre GRATUITE pour plan nutritionnel
+               Ne peux être jumelé à une autre promotion.</p>
+        </div>  
+    <div data-role="footer" data-type="footer" data-position="fixed" data-id="persistent" style="overflow:hidden; text-align: center">
+    <hp style="text-align:center;">www.noterecorder.com</hp>
+    </div> <!-- Content -->
+</div>
+    
+<!--    ***************  Immobilier page  ***************-->
+<!--    *************************************************-->   
+    <div data-role="page" id="Immobilier">
+         <div data-role="header" style="overflow:hidden;" data-id="persistent" data-position="fixed">
+            <h1>Liste des marchands</h1>
+            <a  href="#page2">Carte</a>
+            <div data-role="navbar"> 
+                <ul>
+                    <li><a href="#Restauration" data-transition="slide">Restauration</a></li>
+                    <li><a href="#Service" data-transition="slide">Service</a></li>
+                    <li><a href="#Immobilier" class="ui-button-active">Immobilier</a></li>
+                    <li><a href="#Autres" data-transition="slide">Autres</a></li>
+                </ul>
+            </div>
+        </div><!-- /header -->
+        <div>
+            <div class="MyGrid">
+            <img src="css/logoMarchands/logo-decoration-arnold.png" >
+                <a href="http://www.decorationarnold.com/" target="_blank" align="center"><h2 align="center"> Décoration Arnold inc.</h2> </a>
+            </div>
+            <h1><span style="color: red; font-size: 50px">10%</span> d'escompte sur tous les produits offerts en magasin.</h1>
+            <p>15820, 6e Avenue
+            Saint-Georges
+            418.228.1224
+            </p>
+        </div>
+        <hr> 
+        <div data-role="footer" data-type="footer" data-position="fixed" data-id="persistent" style="overflow:hidden; text-align: center">
+        <hp style="text-align:center;">www.noterecorder.com</hp>
+        </div> <!-- Content -->
+    </div>
+    
+<!--    ***************    Autres page    ***************-->
+<!--    *************************************************--> 
+    <div data-role="page" id="Autres">
+         <div data-role="header" style="overflow:hidden;" data-id="persistent" data-position="fixed">
+            <h1>Liste des marchands</h1>
+            <a href="#page2">Carte</a>
+            <div data-role="navbar"> 
+                <ul>
+                    <li><a href="#Restauration" data-transition="slide">Restauration</a></li>
+                    <li><a href="#Service" data-transition="slide">Service</a></li>
+                    <li><a href="#Immobilier" data-transition="slide">Immobilier</a></li>
+                    <li><a href="#Autres" class="ui-button-active">Autres</a></li>
+                </ul>
+            </div>
+        </div><!-- /header -->
+        <div data-role="footer" data-type="footer" data-position="fixed" data-id="persistent" style="overflow:hidden; text-align: center">
+        <hp style="text-align:center;">www.noterecorder.com</hp>
+        </div> <!-- Content -->
+    </div>
 
 </body>
 </html>
