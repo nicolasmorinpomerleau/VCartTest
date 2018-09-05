@@ -104,7 +104,7 @@
         <h1> </h1>
 <!--        <a data-rel="back" data-icon="back"> Back</a>-->
         <a data-rel="forward" data-icon="forward" onclick= "localStorage.clear()"> Erase Localstorage</a>
-        <a data-id="persistent" href="#Restauration" data-transition="slide"> liste des marchands</a>
+        <a data-id="persistent" href="#page3" data-transition="slide"> liste des marchands</a>
     </div> <!-- header -->
     
 <!--    this should not be used-->
@@ -127,25 +127,30 @@
              page 3
     ****************************
 -->
-<div data-role="page" id="Restauration"> 
+<div data-role="page" id="page3"> 
 <div data-role="header" style="overflow:hidden;" data-id="persistent" data-position="fixed">
 <h1>Liste des marchands</h1>
 <!--                <a data-rel="back" data-icon="back">Retour</a>  -->
-    <a  href="#page2">Carte</a>
+    <a data-rel="back" data-icon="back">Carte</a>
+<!--
     <div data-role="navbar"> 
         <ul>
-            <li><a href="#Restauration" class="ui-button-active">Restauration</a></li>
+            <li><a href="#" class="ui-button-active">Restauration</a></li>
             <li><a href="#Service" data-transition="slide">Service</a></li>
             <li><a href="#Immobilier" data-transition="slide">Immobilier</a></li>
             <li><a href="#Autres" data-transition="slide">Autres</a></li>
         </ul>
     </div>
+-->
 </div><!-- /header -->
  
-    <!--    *************** Restauration page ***************-->
+<div data-role="collapsibleset" data-theme="a" data-content-theme="a">
+    
+<!--    *************** Restauration page ***************-->
 <!--    *************************************************-->
-
-        <div>
+    <div data-role="collapsible">
+        <h3 d>Restauration</h3>
+<div>
             <h1 align="center"> Café Royal enr.</h1>
             <h1><span style="color: red; font-size: 50px">10%</span> d'escompte sur le menu à la carte.</h1>
             <p>12015, 2e Avenue
@@ -185,15 +190,6 @@
                 418.228.8212
             </p>
             <p>Nourriture seulement.</p>
-        </div> 
-       <div>
-            <a href="http://www.mobilieraccescible.com/" target="_blank"  align="center"><h1>Mobilier L'Accès-cible</h1></a>
-            <h2>15% d'escompte sur tout achat à prix régulier.</h2>
-            <img src="css/logoMarchands/MobilierCible.png" >
-            <p>8920, boul. Lacroix
-                Saint-Georges
-                418.227.5319
-            </p>
         </div> 
        <div>
             <a href="https://thaizone.ca/" target="_blank"  align="center"><h1>Thaï Zone</h1></a>
@@ -251,29 +247,12 @@ ou
             <h1 align="center">Terminal de transaction</h1>
             <h2>Taux préférentiels sur les transactions avec cartes de crédit Visa sur terminal de Global Payments et TD Canada Trust</h2>
         </div>        
-    <div data-role="footer" data-type="footer" data-position="fixed"  data-id="persistent" style="overflow:hidden; text-align: center">
-    <hp style="text-align:center;">www.noterecorder.com</hp>
-    </div> <!-- Content -->
-</div><!-- /Restauration -->
-
-
+    </div>
     
 <!--    ***************   Service page    ***************-->
 <!--    *************************************************-->
-    <div data-role="page" id="Service">
-         <div data-role="header" style="overflow:hidden;"  data-id="persistent" data-position="fixed">
-            <h1>Liste des marchands</h1>
-            <a href="#page2">Carte</a>
-            <div data-role="navbar"> 
-                <ul>
-                    <li><a href="#Restauration" data-transition="slide">Restauration</a></li>
-                    <li><a href="#Service" class="ui-button-active">Service</a></li>
-                    <li><a href="#Immobilier" data-transition="slide">Immobilier</a></li>
-                    <li><a href="#Autres" data-transition="slide">Autres</a></li>
-                </ul>
-            </div>
-        </div><!-- /header -->
-        <div>
+    <div data-role="collapsible">
+        <h3>Service</h3>
             <div class="MyGrid">
             <img class="logo" src="css/logoMarchands/Imagix_V2.png" >
             <a href="http://www.conceptionimagix.com/" target="_blank"  align="center"> <h2>Conception IMAGIX</h2></a>
@@ -284,7 +263,6 @@ ou
         Saint-Georges
         418.227.7800
             </p>
-        </div>
         <hr>
         <div>
             <h1 align="center">Centre de location St-Georges</h1>
@@ -309,27 +287,22 @@ ou
             </p>
             <p>Rencontre GRATUITE pour plan nutritionnel
                Ne peux être jumelé à une autre promotion.</p>
-        </div>  
-    <div data-role="footer" data-type="footer" data-position="fixed" data-id="persistent" style="overflow:hidden; text-align: center">
-    <hp style="text-align:center;">www.noterecorder.com</hp>
-    </div> <!-- Content -->
-</div>
-    
+        </div> 
+    </div>
+
 <!--    ***************  Immobilier page  ***************-->
-<!--    *************************************************-->   
-    <div data-role="page" id="Immobilier">
-         <div data-role="header" style="overflow:hidden;" data-id="persistent" data-position="fixed">
-            <h1>Liste des marchands</h1>
-            <a  href="#page2">Carte</a>
-            <div data-role="navbar"> 
-                <ul>
-                    <li><a href="#Restauration" data-transition="slide">Restauration</a></li>
-                    <li><a href="#Service" data-transition="slide">Service</a></li>
-                    <li><a href="#Immobilier" class="ui-button-active">Immobilier</a></li>
-                    <li><a href="#Autres" data-transition="slide">Autres</a></li>
-                </ul>
-            </div>
-        </div><!-- /header -->
+<!--    *************************************************--> 
+    <div data-role="collapsible">
+        <h3>Immobilier</h3>
+         <div>
+            <a href="http://www.mobilieraccescible.com/" target="_blank"  align="center"><h1>Mobilier L'Accès-cible</h1></a>
+            <h2>15% d'escompte sur tout achat à prix régulier.</h2>
+            <img src="css/logoMarchands/MobilierCible.png" >
+            <p>8920, boul. Lacroix
+                Saint-Georges
+                418.227.5319
+            </p>
+        </div>         
         <div>
             <div class="MyGrid">
             <img src="css/logoMarchands/logo-decoration-arnold.png" >
@@ -341,31 +314,27 @@ ou
             418.228.1224
             </p>
         </div>
-        <hr> 
-        <div data-role="footer" data-type="footer" data-position="fixed" data-id="persistent" style="overflow:hidden; text-align: center">
-        <hp style="text-align:center;">www.noterecorder.com</hp>
-        </div> <!-- Content -->
     </div>
     
 <!--    ***************    Autres page    ***************-->
 <!--    *************************************************--> 
-    <div data-role="page" id="Autres">
-         <div data-role="header" style="overflow:hidden;" data-id="persistent" data-position="fixed">
-            <h1>Liste des marchands</h1>
-            <a href="#page2">Carte</a>
-            <div data-role="navbar"> 
-                <ul>
-                    <li><a href="#Restauration" data-transition="slide">Restauration</a></li>
-                    <li><a href="#Service" data-transition="slide">Service</a></li>
-                    <li><a href="#Immobilier" data-transition="slide">Immobilier</a></li>
-                    <li><a href="#Autres" class="ui-button-active">Autres</a></li>
-                </ul>
-            </div>
-        </div><!-- /header -->
-        <div data-role="footer" data-type="footer" data-position="fixed" data-id="persistent" style="overflow:hidden; text-align: center">
-        <hp style="text-align:center;">www.noterecorder.com</hp>
-        </div> <!-- Content -->
+    <div data-role="collapsible">
+        <h3>Autre</h3>
+
+        
+        
     </div>
+
+
+<!--    ***************       Footer      ***************-->
+<!--    *************************************************--> 
+    <div data-role="footer" data-type="footer" data-position="fixed"   style="overflow:hidden; text-align: center">
+<!--        data-id="persistent" to persist in the slide transition-->
+    <hp style="text-align:center;">www.noterecorder.com</hp>
+    </div> <!-- Footer -->
+    
+</div><!-- /Page3 -->
+
 
 </body>
 </html>
