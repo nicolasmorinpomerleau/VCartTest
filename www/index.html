@@ -52,9 +52,7 @@
       
     function Validate(){        
          email = document.getElementById('email').value;
-         code  = document.getElementById('code').value;
-       alert("il a récupéré les paramèetres");
-        
+         code  = document.getElementById('code').value;        
         $.ajax({
 //            url: 'http://localhost:4000/check',
             url:'https://5m1qfi37ie.execute-api.eu-west-1.amazonaws.com/Dev/emailCode',
@@ -117,12 +115,8 @@
             <div class="mainGrid">
               <div class="container">
                   <div id="TextContact"> 
-                  <label id="name"><h1></h1></label> 
-                  <h4><label id="compagny"></label></h4> 
-                  <div style="display: inline;"> 
-                      <h4 style="color: darkgray;     float: right;
-    padding-right: 10%;"> Date d'expiration:<label for="text-12" id="expireDate"> 31 août 2019 </label></h4>
-                  </div><br>
+                  <label id="name"><h1></h1></label>
+                  <label id="compagny"><h1></h1></label>
                   </div>
                 </div>
             </div>
@@ -141,7 +135,7 @@
         <h1>Liste des marchands</h1>
         <a data-rel="back" data-icon="back">Retour</a>    </div> <!-- header -->
 <!--    <div data-role="content">-->
-           <div role="main" class="ui-content">
+           <div role="main">
 <!--        Pour le test-->
 <!--        ============-->
         <div >
