@@ -102,13 +102,9 @@
 <div data-role="page" id="page2">
     <div data-role="header" data-theme="a">
         <h1> </h1>
-<!--        <a data-rel="back" data-icon="back"> Back</a>-->
-        <a data-rel="forward" data-icon="forward" onclick= "localStorage.clear()"> Erase Localstorage</a>
-        <a data-id="persistent" href="#page3" data-transition="slide"> liste des marchands</a>
+<!--        <a data-rel="forward" data-icon="forward" onclick= "localStorage.clear()"> Erase Localstorage</a>-->
+        <a data-id="persistent" href="#page3" data-transition="slide"> Liste des marchands</a>
     </div> <!-- header -->
-    
-<!--    this should not be used-->
-<!--    <div data-role="content"> -->
      <div role="main" class="ui-content second">
         <div class="Carte grid">
             <div>
@@ -149,103 +145,57 @@
 <!--    *************** Restauration page ***************-->
 <!--    *************************************************-->
     <div data-role="collapsible">
-        <h1>Restauration</h1>
-<div>
-            <h1 align="center"> Café Royal enr.</h1>
-            <h1><span style="color: red; font-size: 50px">10%</span> d'escompte sur le menu à la carte.</h1>
-            <p>12015, 2e Avenue
+        <h1>Restauration</h1> 
+        <div>
+            <h2 style="color: coral;" align="left" style="color: coral"> Café Royal enr.</h2>
+            <h3><span style="color: red;">10%</span> d'escompte sur le menu à la carte.</h3>
+            <h4>12015, 2e Avenue
             Saint-Georges
-            418.228.3952</p>
+            418.228.3952</h4>
         </div>
         <hr>
         <div>
-            <a href="https://www.cage.ca/saint-georges-de-beauce" target="_blank"  align="center"><h1>La Cage de Saint-Georges, Brasserie sportive</h1></a>
-            <h2>Achetez une assiette à prix régulier et obtenez la deuxième à 50%.</h2>
+            <a href="https://www.cage.ca/saint-georges-de-beauce" target="_blank" align="center" style="color: coral"><h2>La Cage de Saint-Georges, Brasserie sportive</h2></a>
+            <h3>Achetez une assiette à prix régulier et obtenez la deuxième à <span style="color: red;">50%</span>.</h3>
+            <h4>Ne peut être jumelé à aucune autre promotion. Ne s'applique pas sur les déjeuners.</h4>
             <img src="css/logoMarchands/LaCageBrasserie.png" >
-            <p>455, 90e Rue
+            <h4>455, 90e Rue
                 Saint-Georges
                 418.227.8181
-            </p>
-            <p>Ne peut être jumelé à aucune autre promotion. Ne s'applique pas sur les déjeuners.</p>
+            </h4>
         </div>    
     <hr>
         <div>
-            <div class="MyGrid">
+<!--            <div class="MyGrid">-->
+                <a href="http://www.latabledujunior.com/" target="_blank" align="center" style="color: coral"> <h2 align="center">La Table du Junior.</h2></a>
+<!--            </div>-->
+            <h3><span style="color: red;">15%</span> de rabais à l'achat de deux tables d'hôte du soir.</h3>
+            <h4>Ne peut être jumelé à aucune autre promotion.</h4>
             <img src="css/logoMarchands/LaTableDuJ.png">
-                <a href="http://www.latabledujunior.com/" target="_blank" align="center"> <h2 align="center">La Table du Junior.</h2> </a>
-            </div>
-            <h1><span style="color: red; font-size: 50px">15%</span> de rabais à l'achat de deux tables d'hôte du soir.</h1>
-        <p>10737, 1e Avenue
+        <h4>10737, 1e Avenue
             Saint-Georges
             418.227.0888
-            </p>
-            <p>Ne peut être jumelé à aucune autre promotion.</p>
+            </h4>
         </div> <hr>     
        <div>
-            <a href="https://bostonpizza.com/fr/index.html?gclid=Cj0KCQjw2f7bBRDVARIsAAwYBBu1x7hl1tqLKX2hKMA3XxB812GRPPrysNyVrIAll411gXEGUVm9w2UaAifTEALw_wcB&gclsrc=aw.ds" target="_blank"  align="center"><h1>Boston Pizza St-Georges</h1></a>
-            <h2>15% d'escompte sur tout le menu régulier.</h2>
+            <a href="https://bostonpizza.com/fr/index.html?gclid=Cj0KCQjw2f7bBRDVARIsAAwYBBu1x7hl1tqLKX2hKMA3XxB812GRPPrysNyVrIAll411gXEGUVm9w2UaAifTEALw_wcB&gclsrc=aw.ds" target="_blank" align="center" style="color: coral"><h2>Boston Pizza St-Georges</h2></a>
+            <h3><span style="color: red;">15%</span> d'escompte sur tout le menu régulier.</h3>
+            <h4>Nourriture seulement.</h4>
             <img src="css/logoMarchands/BostonPizza.jpeg" >
-            <p>14917, boul. Lacroix
+            <h4>14917, boul. Lacroix
                 Saint-Georges
                 418.228.8212
-            </p>
-            <p>Nourriture seulement.</p>
+            </h4>
         </div> 
+        <hr>
        <div>
-            <a href="https://thaizone.ca/" target="_blank"  align="center"><h1>Thaï Zone</h1></a>
-            <h2>10% de rabais sur tout le menu.</h2>
+            <a href="https://thaizone.ca/" target="_blank" align="center" style="color: coral"><h2>Thaï Zone</h2></a>
+            <h3><span style="color: red;">10%</span> de rabais sur tout le menu.</h3>
             <img src="css/logoMarchands/ThaiZone.png" >
-            <p>10125, boul. Lacroix
+            <h4>10125, boul. Lacroix
                 Saint-Georges
                 418.227.9663
-            </p>
-        </div> 
-       <div>
-            <a href="http://www.thermoflowjmroy.ca/" target="_blank"  align="center"><h1>ThermoFlow J.M.Roy</h1></a>
-            <h2>15% d'escompte sur achat de produits Thermoflow.</h2>
-            <img src="css/logoMarchands/Thermoflow.png" >
-            <p>268, 6e Avenue Nord
-                Saint-Georges
-                418.228.2655
-            </p>
-        </div> 
-       <div>
-            <a href="https://www.ubeo.ca/" target="_blank"   align="center"><h1>UBÉO</h1></a>
-            <h2>1 an d'hébergement gratuit à l’achat d’un nouveau site web (valeur de + 150 $)
-ou
-1 mois d’essai gratuit pour la gestion de votre page Facebook entreprise</h2>
-            <img src="css/logoMarchands/UBEO.png" >
-            <p>13865, boul. Lacroix
-                Saint-Georges
-                418.221.7688
-            </p>
-           <p>Détails sur place.</p>
-        </div>
-       <div>
-            <h1 align="center">Lamarque 360 </h1>
-            <h2>Lamarque 360 vous offre une analyse gratuite de votre culture d’entreprise et 10% de rabais sur vos frais d’affichage avec Lamarque Affiche. </h2>
-            <img src="css/logoMarchands/UBEO.png" >
-            <p>65, 2e Rue Sartigan
-                Saint-Georges
-                G5Y 5B8
-                418.230.2171
-            </p>
-           <p>Ne peut être jumelé à aucune autre promotion.</p>
-        </div>
-        <hr>
-        <h1 align="center">Avantages provinciaux</h1>
-        <hr>
-        <p style="color: black !important">Pour bénéficier des rabais ou demandez de l'information, téléphonez à la Chambre de commerce de Saint-Georges au 418.228.7879.</p>
-       <div class="listeMarchands arnold">
-            <h1 align="center">Essence</h1>
-            <h2>Bénéficiez  de 2.5% de rabais sur l'achat de cartes prépayées Ultradollars chez Ultramar.</h2>
-            <p style="color: black !important" >Sur achat de carburant effectué au Canada, obtenez un rabais de 0.03$ du litre avec Shell  <b>(Programme de cartes de crédit Shell TRITON)</b>  et 0.035$ du litre avec Esso  (Cartes de crédit ESSO)
-            </p>
-           <p>Ne peut être jumelé à aucune autre promotion.</p>
-        </div>
-        <div>
-            <h1 align="center">Terminal de transaction</h1>
-            <h2>Taux préférentiels sur les transactions avec cartes de crédit Visa sur terminal de Global Payments et TD Canada Trust</h2>
+            </h4>
         </div>        
     </div>
     
@@ -253,40 +203,73 @@ ou
 <!--    *************************************************-->
     <div data-role="collapsible">
         <h1>Service</h1>
-            <div class="MyGrid">
-            <img class="logo" src="css/logoMarchands/Imagix_V2.png" >
-            <a href="http://www.conceptionimagix.com/" target="_blank"  align="center"> <h2>Conception IMAGIX</h2></a>
-            </div>
-            <h1><span style="color: red; font-size: 50px">10%</span> de rabais valide au centre de photocopies</h1>
-        <p style="color: black !important" >Pour l’impression numérique, grand format et graphisme. Détails sur place.</p>
-        <p>13865, boul. Lacroix
+               <div>
+            <a href="http://www.thermoflowjmroy.ca/" target="_blank" align="center" style="color: coral"><h2>ThermoFlow J.M.Roy</h2></a>
+            <h3><span style="color: red;">15%</span> d'escompte sur achat de produits Thermoflow.</h3>
+            <img src="css/logoMarchands/Thermoflow.png" >
+            <h4>268, 6e Avenue Nord
+                Saint-Georges
+                418.228.2655
+            </h4>
+        </div> 
+        <hr>
+       <div>
+            <a href="https://www.ubeo.ca/" target="_blank" align="center" style="color: coral"><h2>UBÉO</h2></a>
+            <h3>1 an d'hébergement gratuit à l’achat d’un nouveau site web (valeur de + 150 $)
+ou
+1 mois d’essai gratuit pour la gestion de votre page Facebook entreprise</h3>
+           <h4>Détails sur place.</h4>
+            <img src="css/logoMarchands/UBEO.png" >
+            <h4>13865, boul. Lacroix
+                Saint-Georges
+                418.221.7688
+            </h4>
+        </div>
+        <hr> 
+       <div>
+           <a href="https://www.lamarque.ca/" target="_blank" align="center" style="color: coral"> <h2 align="center">Lamarque 360 </h2></a>
+            <h3>Lamarque 360 vous offre une analyse gratuite de votre culture d’entreprise et 10% de rabais sur vos frais d’affichage avec Lamarque Affiche. </h3>
+           <h4>Ne peut être jumelé à aucune autre promotion.</h4>
+            <img src="css/logoMarchands/lamarque.png" >
+            <h4>65, 2e Rue Sartigan
+                Saint-Georges
+                G5Y 5B8
+                418.230.2171
+            </h4>
+        </div>
+        <hr>
+    <div>
+            <a href="http://www.conceptionimagix.com/" target="_blank" align="center" style="color: coral"> <h2>Conception IMAGIX</h2></a>
+            <h3><span style="color: red;">10%</span> de rabais valide au centre de photocopies</h3>
+        <h4 style="color: black !important" >Pour l’impression numérique, grand format et graphisme. Détails sur place.</h4>
+        <img class="logo" src="css/logoMarchands/Imagix_V2.png" >
+        <h4>13865, boul. Lacroix
         Saint-Georges
         418.227.7800
-            </p>
+            </h4>
+    </div>
         <hr>
-        <div>
-            <h1 align="center">Centre de location St-Georges</h1>
-            <h2>10% de rabais sur la location d'outillage. </h2>
+        <div> 
+            <a href="http://www.location-st-georges.com/" target="_blank" align="center" style="color: coral"> <h2 align="center">Centre de location St-Georges</h2></a>
+            <h3><span style="color: red;">10%</span> de rabais sur la location d'outillage. </h3>
+            <h4>Contactez le détaillant pour plus d'informations.</h4>
             <img src="css/logoMarchands/centredelocationstgeorges-logo.png" >
-            <p>16375, boul. Lacroix
+            <h4>16375, boul. Lacroix
                 Saint-Georges
                 418.227.9563
-            </p>
-            <p>Contactez le détaillant pour plus d'informations.</p>
+            </h4>
         </div> 
         <hr>
         <div>
-            <div class="MyGrid">
+            <a href="http://www.cardiofeminin.com/" target="_blank" align="center" style="color: coral"> <h2 >Cardio Féminin inc.</h2></a>
+            <h3><span style="color: red;">15%</span> de rabais sur entraînement, infrathérapie, bronzage</h3>
+            <h4>Rencontre GRATUITE pour plan nutritionnel
+               Ne peux être jumelé à une autre promotion.</h4>
             <img src="css/logoMarchands/CardioFeminin.png" >
-                <a href="http://www.cardiofeminin.com/" target="_blank" align="center"> <h2 >Cardio Féminin inc.</h2> </a>
-            </div>
-            <h1><span style="color: red; font-size: 50px">15%</span> de rabais sur entraînement, infrathérapie, bronzage</h1>
-        <p>300, 107e Rue
+        <h4>300, 107e Rue
             Saint-Georges
             418.228.4211
-            </p>
-            <p>Rencontre GRATUITE pour plan nutritionnel
-               Ne peux être jumelé à une autre promotion.</p>
+            </h4>
         </div> 
     </div>
 
@@ -295,34 +278,79 @@ ou
     <div data-role="collapsible">
         <h1>Immobilier</h1>
          <div>
-            <a href="http://www.mobilieraccescible.com/" target="_blank"  align="center"><h1>Mobilier L'Accès-cible</h1></a>
-            <h2>15% d'escompte sur tout achat à prix régulier.</h2>
+            <a href="http://www.mobilieraccescible.com/" target="_blank"  align="center" style="color: coral"><h2>Mobilier L'Accès-cible</h2></a>
+            <h3><span style="color:red;">15%</span> d'escompte sur tout achat à prix régulier.</h3>
             <img src="css/logoMarchands/MobilierCible.png" >
-            <p>8920, boul. Lacroix
+            <h4>8920, boul. Lacroix
                 Saint-Georges
                 418.227.5319
-            </p>
-        </div>         
+            </h4>
+        </div>
+        <hr>
         <div>
-            <div class="MyGrid">
+            <a href="http://www.decorationarnold.com/" target="_blank" align="center" style="color: coral"><h2> Décoration Arnold inc.</h2> </a>
+            <h3><span style="color: red;">10%</span> d'escompte sur tous les produits offerts en magasin.</h3>
             <img src="css/logoMarchands/logo-decoration-arnold.png" >
-                <a href="http://www.decorationarnold.com/" target="_blank" align="center"><h2 align="center"> Décoration Arnold inc.</h2> </a>
-            </div>
-            <h1><span style="color: red; font-size: 50px">10%</span> d'escompte sur tous les produits offerts en magasin.</h1>
-            <p>15820, 6e Avenue
+            <h4>15820, 6e Avenue
             Saint-Georges
             418.228.1224
-            </p>
+            </h4>
         </div>
     </div>
     
-<!--    ***************    Autres page    ***************-->
-<!--    *************************************************--> 
+<!--    ***************    Avantages provinciaux page    ***************-->
+<!--    ****************************************************************--> 
     <div data-role="collapsible">
-        <h1>Autre</h1>
+        <h1>Avantages provinciaux</h1>
+<!--
+        <hr>
+        <p style="color: black !important">Pour bénéficier des rabais ou demandez de l'information, téléphonez à la Chambre de commerce de Saint-Georges au 418.228.7879.</p>
+-->
+<!--       <div class="listeMarchands arnold">-->
+            <h2 style="color: coral">Essence</h2>
+        <ul>        <li><h4>Bénéficiez  de 2.5% de rabais sur l'achat de cartes prépayées Ultradollars chez Ultramar.</h4></li>
+            <li><h4>Sur achat de carburant effectué au Canada, obtenez un rabais de 0.03$ du litre avec Shell  <b>(Programme de cartes de crédit Shell TRITON)</b>  et 0.035$ du litre avec Esso  (Cartes de crédit ESSO)
+            </h4></li></ul>    
 
-        
-        
+<!--        </div>-->
+        <div>
+            <h2 style="color: coral">Terminal de transaction</h2>
+            <ul>
+            <li>
+<h4>Taux préférentiels sur les transactions avec cartes de crédit Visa sur terminal de Global Payments et TD Canada Trust</h4>                </li>
+            </ul>
+        </div>
+        <h2 style="color: coral">Assurances</h2>
+<h4>Régime d'assurance collective conçu spécialement pour répondre aux besoins des PME, s'adressant également aux travailleurs autonomes et aux entreprises familiales.</h4>
+        <hr>
+        <h2 style="color: coral">Hébergement</h2>
+        <img src="css/logoMarchands/logo___auberge_le_pomerol.png" />
+        <ul><li><h4>
+     Minimum de 15% de rabais sur le tarif régulier à l'Auberge le Pomerol de Montréal, et encore plus en haute saison.
+            </h4></li></ul>
+        <h4>Ces tarifs incluent :</h4>
+        <ul>
+        <li>Petit déjeuner continental livré à la chambre ou pouvant être savouré dans notre salle à déjeuner,
+</li>
+        <li>Internet haute vitesse sans fil,
+</li>
+        <li>Revêtement de plancher en bois franc,
+</li>
+        <li>Espaces communs pour rencontrer vos relations
+</li>
+        <li>Café, thé et tisanes et biscuits gratuits en soirée,
+</li>
+        <li>Journaux et revues au salon,
+</li>
+        <li>Station café dans chaque chambre.
+</li>
+<h4>Communiquez directement avec l'auberge Le Pomerol au 514.526.5511 pour faire votre réservation.</h4>
+        </ul>
+        <img src="css/logoMarchands/hc_horizontal_notag.jpg" />
+    <ul>
+        <li>
+        <h4>15% sur le meilleur tarif dans l’un des 31 établissements d'Hotellerie Champêtre .</h4></li></ul>
+                <h4>Communiquez à la CCSG pour obtenir votre code rabais.</h4>
     </div>
 
 
@@ -330,11 +358,11 @@ ou
 <!--    *************************************************--> 
     <div data-role="footer" data-type="footer" data-position="fixed"   style="overflow:hidden; text-align: center">
 <!--        data-id="persistent" to persist in the slide transition-->
-    <hp style="text-align:center;">www.noterecorder.com</hp>
+    <hp style="text-align:center;">www.amcreatives.ca</hp>
     </div> <!-- Footer -->
     
 </div><!-- /Page3 -->
 
-
+    </div>
 </body>
 </html>

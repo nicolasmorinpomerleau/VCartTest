@@ -1,14 +1,12 @@
 
-/*
-#TextContact{
-    line-height: 90%;
-}
-*/
-
 h2 {
     width: 100%;
-    text-align:center;
+    text-align:left;
     padding-top: 2%;
+    font-family: "Century Gothic",sans-serif;
+}
+h3, h4{
+    font-family: "Century Gothic",sans-serif;
 }
 p{
     width: 100%;
@@ -133,11 +131,6 @@ img
     grid-template-rows: 50% 50%;
     padding: 1em 0em 1.5em 1em;
     grid-row-gap: 0.5vw;
-}
-.GridButtons{
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    width: 100%;
 }
 
 .MyGrid{
