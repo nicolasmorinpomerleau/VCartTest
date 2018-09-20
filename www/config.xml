@@ -8,12 +8,12 @@
 
 <!-- versionCode is optional and Android only -->
 <plugin name="cordova-plugin-whitelist" source="npm"/>
-<name>Chambre de commerce Saint-Georges</name>
+<name>CCSG</name>
 <allow-intent href="http://*/*" />
 <allow-intent href="https://*/*" />
  <icon src="icon_V2.png"/>   
   <description>
-      Test from Abou
+      Carte Virtuelle de la Chambre de Commerce de Saint-Georges.
   </description>
 
   <author href="https://build.phonegap.com" email="support@phonegap.com">
