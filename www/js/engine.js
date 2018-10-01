@@ -3,10 +3,12 @@ var nouveuMessage;
 
 $(function(){
         if(localStorage.Email!=undefined && localStorage.code != undefined){
-            nameID = document.getElementById("name");
-            nameID.innerHTML = localStorage.name;
-            compagnyID = document.getElementById("compagny");
-            compagnyID.innerHTML = localStorage.compagny;                
+            nameID               = document.getElementById("name");
+            nameID.innerHTML     = localStorage.name;
+            compagnyID           = document.getElementById("compagny");
+            compagnyID.innerHTML = localStorage.compagny; 
+            numeroID             = document.getElementById("Numero");
+            numeroID.innerHTML   = localStorage.membreNumber;
             window.location.href = "#page2";
             }
          else{
@@ -35,7 +37,9 @@ function Validate(){
     nameID.innerHTML     = res.info.name;
     compagnyID           = document.getElementById("compagny");
     compagnyID.innerHTML = res.info.company;
-    Numero.innerHTML     = "#"+res.info.memberNumber;
+    numeroID           = document.getElementById("Numero");
+    numeroID.innerHTML =   "#"+res.info.memberNumber;
+//    Numero.innerHTML     = "#"+res.info.memberNumber;
     //                Save user data in local Storage
     localStorage.Email         = email;
     localStorage.code          = code;
