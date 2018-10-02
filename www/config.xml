@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns   = "http://www.w3.org/ns/widgets"
     xmlns:gap   = "http://phonegap.com/ns/1.0"
-    id          = "com.phonegap.example"
+    id          = "com.amcreatives.CCSG"
     versionCode = "10"
     version     = "1.0.0" >
 <access origin="https://5m1qfi37ie.execute-api.eu-west-1.amazonaws.com/Dev/emailCode"/>
@@ -16,8 +16,8 @@
       Carte de membre virtuelle de la Chambre de Commerce de Saint-Georges.
   </description>
 
-  <author href="https://build.phonegap.com" email="support@phonegap.com">
-      amcreatives.ca Aboubakr mekhatria
+  <author href="www.amcreatives.ca" email="aboubakr.mekhatria@gmail.com">
+      amcreatives.ca Aboubakr Mekhatria
   </author>
 
     <preference name="orientation"  value="landscape"></preference>
