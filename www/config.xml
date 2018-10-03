@@ -21,4 +21,5 @@
   </author>
 
     <preference name="orientation"  value="landscape"></preference>
+    <preference name="android-minSdkVersion" value="26" />
 </widget>
