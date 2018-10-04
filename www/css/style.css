@@ -110,7 +110,8 @@ img
     padding: 0.2em 5em 1em 5em;
 /*    background-image: url("Carte%20de%20membre%20-%20Abou-2-V2.jpg");*/
 /*    background-image: url("Carte%20de%20membre%20-%2023Sept.jpg");*/
-    background-image: url("Carte%20de%20membre%20-%20Abou-2-23Sept.jpg");
+/*    background-image: url("Carte%20de%20membre%20-%20Abou-2-23Sept.jpg");*/
+    background-image: url("Copie%20de%20Carte%20de%20membre%20-%20Abou.png");
     background-repeat:repeat-y;
     background-position:center center;
     background-attachment:scroll;
@@ -151,7 +152,9 @@ img
     grid-row-gap: 2vw;
 }
 }
-
+td{
+    text-align:left;
+}
 /*
 @media screen and (orientation:portrait) {
     #name{
