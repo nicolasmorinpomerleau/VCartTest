@@ -2,8 +2,8 @@
 <widget xmlns   = "http://www.w3.org/ns/widgets"
     xmlns:gap   = "http://phonegap.com/ns/1.0"
     id          = "com.amcreatives.CCSG"
-    versionCode = "13"
-    version     = "1.0.3" >
+    versionCode = "14"
+    version     = "1.0.4" >
 <access origin="https://5m1qfi37ie.execute-api.eu-west-1.amazonaws.com/Dev/emailCode"/>
 
 <!-- versionCode is optional and Android only -->
