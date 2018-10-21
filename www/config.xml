@@ -43,8 +43,8 @@
 
 <!--For OneSignal push notifications-->
 <!--================================================================-->
-<plugin name="onesignal-cordova-plugin" spec="^2.4.1" source="npm" />
-
+<gap:plugin name="onesignal-cordova-plugin" spec="^2.4.1" source="npm">
+</gap:plugin>
 <!-- Requires cli-8.0.0 but we recommend using the latest version. -->
 <preference name="phonegap-version" value="cli-8.0.0" />
 
@@ -52,6 +52,8 @@
 <preference name="android-minSdkVersion" value="15" />
 
 <!-- Can omit if not targetting Windows Phone -->
+<!--
 <preference name="windows-appx-target" value="8.1-phone" />
 <preference name="WindowsToastCapable" value="true" />
+-->
 <!--================================================================-->
