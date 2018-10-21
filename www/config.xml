@@ -2,8 +2,8 @@
 <widget xmlns   = "http://www.w3.org/ns/widgets"
     xmlns:gap   = "http://phonegap.com/ns/1.0"
     id          = "com.amcreatives.CCSG"
-    versionCode = "14"
-    version     = "1.0.4" >
+    versionCode = "15"      
+   version     = "1.0.5" >  <!-- à incrémenter pour toute nouvelle mise à jour dans les stores-->
 <access origin="https://5m1qfi37ie.execute-api.eu-west-1.amazonaws.com/Dev/emailCode"/>
 
 <!-- versionCode is optional and Android only -->
@@ -40,3 +40,18 @@
     <preference name="orientation"  value="landscape"></preference>
    <preference name="android-minSdkVersion" value="24" /> <!-- For Android version under 8.0-->
 </widget>
+
+<!--For OneSignal push notifications-->
+<!--================================================================-->
+<gap:plugin name="onesignal-cordova-plugin" spec="^2.4.1" source="npm" />
+
+<!-- Requires cli-8.0.0 but we recommend using the latest version. -->
+<preference name="phonegap-version" value="cli-8.0.0" />
+
+<preference name="android-build-tool" value="gradle" />
+<preference name="android-minSdkVersion" value="15" />
+
+<!-- Can omit if not targetting Windows Phone -->
+<preference name="windows-appx-target" value="8.1-phone" />
+<preference name="WindowsToastCapable" value="true" />
+<!--================================================================-->
