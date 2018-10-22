@@ -17,10 +17,8 @@
     <icon src="icon_V2.png"/> 
     
 <!--  For OneSignal Push notifications  -->
-<!--
 <preference name="android-build-tool" value="gradle" />
 <preference name="android-minSdkVersion" value="15" />
--->
 <!--   ----------------------------- -->
 </platform>
     
@@ -46,13 +44,15 @@
 
     <preference name="orientation"  value="landscape"></preference>
    <preference name="android-minSdkVersion" value="24" /> <!-- For Android version under 8.0-->
-</widget>
 
 <!--For OneSignal push notifications-->
 <!--================================================================-->
-<!--<gap:plugin name="onesignal-cordova-plugin" spec="^2.4.0" source="npm"/>-->
+<gap:plugin name="onesignal-cordova-plugin" spec="^2.4.0" source="npm"/>
 <!--<plugin name="com.onesignal.plugins.onesignal" source="pgb" />-->
 <!-- Requires cli-8.0.0 but we recommend using the latest version. -->
-<!--<preference name="phonegap-version" value="cli-8.0.0" />-->
+<preference name="phonegap-version" value="cli-8.0.0" />
 
 <!--================================================================-->
+</widget>
+
+
