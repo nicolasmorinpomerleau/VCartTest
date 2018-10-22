@@ -48,9 +48,9 @@
 
 <!--For OneSignal push notifications-->
 <!--================================================================-->
-<gap:plugin name="onesignal-cordova-plugin" spec="^2.4.0" source="npm"/>
+<!--<gap:plugin name="onesignal-cordova-plugin" spec="^2.4.0" source="npm"/>-->
 <!--<plugin name="com.onesignal.plugins.onesignal" source="pgb" />-->
 <!-- Requires cli-8.0.0 but we recommend using the latest version. -->
-<preference name="phonegap-version" value="cli-8.0.0" />
+<!--<preference name="phonegap-version" value="cli-8.0.0" />-->
 
 <!--================================================================-->
