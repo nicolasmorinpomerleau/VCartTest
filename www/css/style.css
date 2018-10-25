@@ -124,7 +124,8 @@ img
 
 .grid{
     display: grid;
-    grid-template-rows: 28% 28% 34%;
+/*    last values 28 28 34*/
+    grid-template-rows: 15% 25% 34%;
     padding: 0.5em;
     grid-row-gap: 2px;
 }
