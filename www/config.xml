@@ -44,7 +44,7 @@
   </author>
 
     <preference name="orientation"  value="landscape"></preference>
-   <preference name="android-minSdkVersion" value="26" /> <!-- value="26" For Android version 8.0 and up-->
+   <preference name="android-minSdkVersion" value="24" /> <!-- value="26" For Android version 8.0 and up-->
 
 <!--For OneSignal push notifications-->
 
