@@ -2,8 +2,8 @@
 <widget xmlns   = "http://www.w3.org/ns/widgets"
     xmlns:gap   = "http://phonegap.com/ns/1.0"
     id          = "com.amcreatives.CCSG"
-    versionCode = "16"      
-   version     = "1.0.6" > 
+    versionCode = "17"      
+   version     = "1.0.7" > 
 <access origin="https://5m1qfi37ie.execute-api.eu-west-1.amazonaws.com/Dev/emailCode"/>
 
 <!-- versionCode is optional and Android only -->
@@ -44,7 +44,7 @@
   </author>
 
     <preference name="orientation"  value="landscape"></preference>
-   <preference name="android-minSdkVersion" value="24" /> <!-- For Android version under 8.0-->
+   <preference name="android-minSdkVersion" value="26" /> <!-- value="26" For Android version 8.0 and up-->
 
 <!--For OneSignal push notifications-->
 

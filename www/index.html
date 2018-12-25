@@ -5,11 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
-
     <title>Carte de membre virtuelle</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet"  href="css/jquery.mobile-1.4.5.min.css"/>
-<!--    <script src="js/OneSignal.js"></script>-->
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.mobile-1.4.5.min.js"></script>
     <script src="js/engine.js"></script>
@@ -30,73 +28,10 @@
           Courriel: <input type="text" id="email" name="email"><br>
           Code: <input type="text" id="code" name="code"><br>
             <button onclick="Validate()">Envoyer</button>
-<!--          <input type="submit" value="Submit" onclick="Validate()">-->
         </form>
-        
         <script>
-//          $(function(){
-//            if(localStorage.Email!=undefined && localStorage.code != undefined){
-//                nameID = document.getElementById("name");
-//                nameID.innerHTML = localStorage.name;
-//                compagnyID = document.getElementById("compagny");
-//                compagnyID.innerHTML = localStorage.compagny;                
-//                window.location.href = "#page2";
-//                }
-//              else{
-//                window.location.href = "#page1";
-//              }
-//          });
         </script>
         <script>
-//    var tentative = 0;
-//    function Validate(){        
-//         email = document.getElementById('email').value;
-//         code  = document.getElementById('code').value;        
-//        $.ajax({
-////            url: 'http://localhost:4000/check',
-//            
-//            url:'https://5m1qfi37ie.execute-api.eu-west-1.amazonaws.com/Dev/emailCode',
-////            url:'https://facjip5ul0.execute-api.us-east-2.amazonaws.com/default/VCartFunction',            
-//            
-////         url: '192.168.1.66/check',
-//            type: 'POST',
-//            dataType: 'json',
-//            contentType: 'application/json',
-//            data: JSON.stringify({email, code}),
-//            
-//            success: function(res) {
-//                if(res.answer == 'userFind'){
-//                    nameID               = document.getElementById("name");
-//                    nameID.innerHTML     = res.info.name;
-//                    compagnyID           = document.getElementById("compagny");
-//                    compagnyID.innerHTML = res.info.company;
-//                    Numero.innerHTML     = "#"+res.info.memberNumber;
-//    //                Save user data in local Storage
-//                    localStorage.Email         = email;
-//                    localStorage.code          = code;
-//                    localStorage.name          = res.info.name;
-//                    localStorage.compagny      = res.info.company;
-//                    localStorage.membreNumber  = "#"+res.info.memberNumber;
-////                    Numero.innerHTML = "Veuillez <a href="+'tel:418 228-7879'+"> tél: 418 228-7879</a>";
-//                    window.location.href = "#page2";
-//                }
-//                else if(res.answer == 'userNotFind'){
-//                    tentative = tentative +1;
-//                    nouveuMessage = document.getElementById('message');
-//                    if(tentative < 2){
-//                        nouveuMessage.innerHTML = "Le Courriel ou le code n'est pas correcte, veuillez réessayer de nouveau.";
-//                    }
-//                    else{
-//                        nouveuMessage.innerHTML = "Veuillez contacter l'administration de la Chambre de Commerce de Saint-Georges, <a href=tel:418 228-7879> tél: 418 228-7879</a>";
-//                        tentative = 0;
-//                    }
-//                }
-//            },
-//            error: function(res) {
-//                alert("Erreur de lecture: "+ res.message);
-//            }
-//        });
-//    }
     </script> 
     </div> <!-- Content -->
 </div><!-- /Page 1 -->
@@ -164,13 +99,16 @@
 <!--    *************** Restauration page ***************-->
 <!--    *************************************************-->
     <div data-role="collapsible">
-        <h1>Restauration</h1> 
+               <h1>Restauration</h1> 
+<!--        <iframe  src="http://amcreatives.ca/" style="border: 0; width: 100%; height: 500px"></iframe>-->
+<!--https://github.com/nicolasmorinpomerleau/iframeVirca/blob/master/iframe.html-->
+<!--        https://cloud.highcharts.com/embed/rksMCihz7/-->
         <div>
             <a href="https://www.facebook.com/Caf%C3%A9-Royal-130084890372724/" target="_blank" style="color: #bfa050;" align="center" style="color: #bfa050"><h2> Café Royal enr.</h2></a>
             <h3><span style="color: #bfa050; font-size: 4vw;">10%</span> d'escompte sur le menu à la carte.</h3>
             <h4>12015, 2e Avenue
             Saint-Georges
-<!--            <a href="tel:+4182283952">418.228.3952</a>--></h4>
+</h4>
             418.228.3952
         </div>
         <hr>
@@ -178,24 +116,18 @@
             <a href="https://www.cage.ca/saint-georges-de-beauce" target="_blank" align="center" style="color: #bfa050"><h2>La Cage de Saint-Georges, Brasserie sportive</h2></a>
             <h3>Achetez une assiette à prix régulier et obtenez la deuxième à <span style="color: #bfa050; font-size: 4vw;">50%</span>.</h3>
             <h4>Ne peut être jumelé à aucune autre promotion. Ne s'applique pas sur les déjeuners.</h4>
-<!--            <img src="css/logoMarchands/LaCageBrasserie.png" >-->
             <h4>455, 90e Rue
                 Saint-Georges
-<!--                <a href="tel:+418.227.8181">418.227.8181</a>-->
                 418.227.8181
             </h4>
         </div>    
     <hr>
         <div>
-<!--            <div class="MyGrid">-->
                 <a href="http://www.latabledujunior.com/" target="_blank" align="center" style="color: #bfa050"> <h2 align="center">La Table du Junior.</h2></a>
-<!--            </div>-->
             <h3><span style="color:  #bfa050; font-size: 4vw;">15%</span> de rabais à l'achat de deux tables d'hôte du soir.</h3>
             <h4>Ne peut être jumelé à aucune autre promotion.</h4>
-<!--            <img src="css/logoMarchands/LaTableDuJ.png">-->
         <h4>10737, 1e Avenue
             Saint-Georges
-<!--             <a href=tel:418.227.0888>418.227.0888</a>-->
             418.227.0888
             </h4>
         </div> <hr>     
@@ -203,10 +135,8 @@
             <a href="https://bostonpizza.com/fr/index.html?gclid=Cj0KCQjw2f7bBRDVARIsAAwYBBu1x7hl1tqLKX2hKMA3XxB812GRPPrysNyVrIAll411gXEGUVm9w2UaAifTEALw_wcB&gclsrc=aw.ds" target="_blank" align="center" style="color: #bfa050"><h2>Boston Pizza St-Georges</h2></a>
             <h3><span style="color:  #bfa050; font-size: 4vw;">15%</span> d'escompte sur tout le menu régulier.</h3>
             <h4>Nourriture seulement.</h4>
-<!--            <img src="css/logoMarchands/BostonPizza.jpeg" >-->
             <h4>14917, boul. Lacroix
                 Saint-Georges
-<!--                 <a href=tel:418.228.8212>418.228.8212</a>-->
                 418.228.8212
             </h4>
         </div> 
@@ -214,13 +144,12 @@
        <div>
             <a href="https://thaizone.ca/" target="_blank" align="center" style="color: #bfa050"><h2>Thaï Zone</h2></a>
             <h3><span style="color:  #bfa050; font-size: 4vw;">10%</span> de rabais sur tout le menu.</h3>
-<!--            <img src="css/logoMarchands/ThaiZone.png" >-->
             <h4>10125, boul. Lacroix
                 Saint-Georges
-<!--                 <a href=tel:418.227.9663>418.227.9663</a>-->
                 418.227.9663
             </h4>
         </div>        
+
     </div>
     
 <!--    ***************   Service page    ***************-->
@@ -230,10 +159,8 @@
                <div>
             <a href="http://www.thermoflowjmroy.ca/" target="_blank" align="center" style="color: #bfa050"><h2>ThermoFlow J.M.Roy</h2></a>
             <h3><span style="color:  #bfa050; font-size: 4vw;">15%</span> d'escompte sur achat de produits Thermoflow.</h3>
-<!--            <img src="css/logoMarchands/Thermoflow.png" >-->
             <h4>268, 6e Avenue Nord
                 Saint-Georges
-<!--                 <a href=tel:418.228.2655>418.228.2655</a>-->
                 418.228.2655
             </h4>
         </div> 
@@ -244,10 +171,8 @@
 ou
 1 mois d’essai gratuit pour la gestion de votre page Facebook entreprise</h3>
            <h4>Détails sur place.</h4>
-<!--            <img src="css/logoMarchands/UBEO.png" >-->
             <h4>13865, boul. Lacroix
                 Saint-Georges
-<!--                 <a href=tel:418.221.7688>418.221.7688</a>-->
                 418.221.7688
             </h4>
         </div>
@@ -256,11 +181,9 @@ ou
            <a href="https://www.lamarque.ca/" target="_blank" align="center" style="color: #bfa050"> <h2 align="center">Lamarque 360 </h2></a>
             <h3>Lamarque 360 vous offre une analyse gratuite de votre culture d’entreprise et 10% de rabais sur vos frais d’affichage avec Lamarque Affiche. </h3>
            <h4>Ne peut être jumelé à aucune autre promotion.</h4>
-<!--            <img src="css/logoMarchands/lamarque.png" >-->
             <h4>65, 2e Rue Sartigan
                 Saint-Georges
                 G5Y 5B8
-<!--                 <a href=tel:418.230.2171>418.230.2171</a>-->
                 418.230.2171
             </h4>
         </div>
@@ -269,10 +192,8 @@ ou
             <a href="http://www.conceptionimagix.com/" target="_blank" align="center" style="color: #bfa050"> <h2>Conception IMAGIX</h2></a>
             <h3><span style="color:  #bfa050; font-size: 4vw;">10%</span> de rabais valide au centre de photocopies</h3>
         <h4 style="color: black !important" >Pour l’impression numérique, grand format et graphisme. Détails sur place.</h4>
-<!--        <img class="logo" src="css/logoMarchands/Imagix_V2.png" >-->
         <h4>13865, boul. Lacroix
         Saint-Georges
-<!--         <a href=tel:418.227.7800>418.227.7800</a>-->
             418.227.7800
             </h4>
     </div>
@@ -281,10 +202,8 @@ ou
             <a href="http://www.location-st-georges.com/" target="_blank" align="center" style="color: #bfa050"> <h2 align="center">Centre de location St-Georges</h2></a>
             <h3><span style="color:  #bfa050; font-size: 4vw;">10%</span> de rabais sur la location d'outillage. </h3>
             <h4>Contactez le détaillant pour plus d'informations.</h4>
-<!--            <img src="css/logoMarchands/cent #bfa050; font-size: 4vwelocationstgeorges-logo.png" >-->
             <h4>16375, boul. Lacroix
                 Saint-Georges
-<!--                 <a href=tel:418.227.9563>418.227.9563</a>-->
                 418.227.9563
             </h4>
         </div> 
@@ -294,10 +213,8 @@ ou
             <h3><span style="color:  #bfa050; font-size: 4vw;">15%</span> de rabais sur entraînement, infrathérapie, bronzage</h3>
             <h4>Rencontre GRATUITE pour plan nutritionnel
                Ne peux être jumelé à une autre promotion.</h4>
-<!--            <img src="css/logoMarchands/CardioFeminin.png" >-->
         <h4>300, 107e Rue
             Saint-Georges
-<!--             <a href=tel:418.228.4211>418.228.4211</a>-->
             418.228.4211
             </h4>
         </div> 
@@ -310,10 +227,8 @@ ou
          <div>
             <a href="http://www.mobilieraccescible.com/" target="_blank"  align="center" style="color: #bfa050"><h2>Mobilier L'Accès-cible</h2></a>
             <h3><span style="color: #bfa050; font-size: 4vw;">15%</span> d'escompte sur tout achat à prix régulier.</h3>
-<!--            <img src="css/logoMarchands/MobilierCible.png" >-->
             <h4>8920, boul. Lacroix
                 Saint-Georges
-<!--                 <a href=tel:418.227.5319>418.227.5319</a>-->
                 418.227.5319
             </h4>
         </div>
@@ -321,10 +236,8 @@ ou
         <div>
             <a href="http://www.decorationarnold.com/" target="_blank" align="center" style="color: #bfa050"><h2> Décoration Arnold inc.</h2> </a>
             <h3><span style="color:  #bfa050; font-size: 4vw;">10%</span> d'escompte sur tous les produits offerts en magasin.</h3>
-<!--            <img src="css/logoMarchands/logo-decoration-arnold.png" >-->
             <h4>15820, 6e Avenue
             Saint-Georges
-<!--             <a href=tel:418.228.1224>418.228.1224</a>-->
                 418.228.1224
             </h4>
         </div>
@@ -334,29 +247,75 @@ ou
 <!--    ****************************************************************--> 
     <div data-role="collapsible">
         <h1>Avantages provinciaux</h1>
-<!--
-        <hr>
-        <p style="color: black !important">Pour bénéficier des rabais ou demandez de l'information, téléphonez à la Chambre de commerce de Saint-Georges au 418.228.7879.</p>
--->
-<!--       <div class="listeMarchands arnold">-->
             <h2 style="color: #bfa050">Essence</h2>
-        <ul>        <li><h4>Bénéficiez  de 2.5% de rabais sur l'achat de cartes prépayées Ultradollars chez Ultramar.</h4></li>
-            <li><h4>Sur achat de carburant effectué au Canada, obtenez un rabais de 0.03$ du litre avec Shell  <b>(Programme de cartes de crédit Shell TRITON)</b>  et 0.035$ du litre avec Esso  (Cartes de crédit ESSO)
-            </h4></li></ul>    
+        <a style="color: #bfa050">Ultramar</a>
+        <ul>      
+            <li><h4>La FCCQ est heureuse de vous proposer un rabais de 2,5 %* sur vos commandes de cartes prépayées Ultradollars. Ces cartes permettent de régler vos achats de carburant dans les stations Ultramar.</h4></li>
+            <li><h4>De plus, les forfaits de cartes disponibles vous permettent également d’offrir des cadeaux originaux dans le temps des fêtes à vos employés, clients ou collaborateurs tout en faisant des économies.
+            </h4></li>
+                *Minimum de 250$.
+        </ul> 
+        
+                <a style="color: #bfa050">Shell</a>
+        <ul>      
+            <li><h4>Programme de cartes Shell TRITON</h4></li>
 
+<li><h4>Carte Shell TRITON pour la gestion de parc de véhicules.</h4></li>
+
+<li><h4>Donne accès à l’un des plus vastes réseaux de détaillants de carburant au Canada.</h4></li>
+
+<li><h4>Contrôle souple en temps réel de vos consommations avec rabais jusqu’à 0,03 $* du litre</h4></li>
+Téléchargez le <a href="https://www1.fccq.ca/wp-content/uploads/2017/07/TRITON_faxable_formulaire.pdf" target="_blank">formulaire</a>
+            <br>
+* Pour plus de plus amples informations, veuillez communiquer avec M. Simplice Traore au 1 800 661-2278, poste 44696 ou par <a href="mailto:simplice.traore@shellcards.ca">par courriel</a>
+
+<br>Pour en savoir plus, cliquez <a href="https://www.shell.ca/" target="_blank">ICI!</a>
+        </ul>
+
+        <a style="color: #bfa050">Esso</a>
+        <ul>
+        <li><h4>Rabais sur les achats de carburant chez ESSO</h4></li>
+
+<li><h4>La FCCQ et Esso sont heureuses de vous offrir un rabais de 0,035 $ du litre sur l’achat de carburant.</h4></li>
+
+<li><h4>De plus, les membres peuvent bénéficier de la carte Esso pour parc automobile, qui offre un programme complet de gestion des besoins en matière de véhicule. Suite à l’obtention de la carte Esso pour parc automobile, les membres qui en font la demande pourront se prémunir d’un Speedpass qui permet de régler facilement et rapidement tous les achats effectués chez un détaillant Esso.</h4></li>
+
+<li><h4>Les rabais sont applicables dans toutes les stations Esso au Canada. Il existe à cet effet deux types de programme, un programme de cartes corporatives et un programme destiné aux employés des membres.</h4></li>
+</ul>
+Documentation française
+<li>Information générale sur la cartes d’Affaires Esso <a href="https://www1.fccq.ca/wp-content/uploads/2017/07/Esso-Business-Card-information-FR.pdf" target="_blank">(version française)</a> <a href="https://www1.fccq.ca/wp-content/uploads/2017/07/Esso-Business-Card-Information-EN.pdf" target="_blank">(English version)</a></li>
+<li>Demande de compte de carte d’Affaires Esso <a href="https://www1.fccq.ca/wp-content/uploads/2017/07/Esso-Business-Card-Program-app-Assoc-Business-FR-Carte-standard.pdf" target="_blank">(Standard)</a></li>
+<li>Demande de compte de carte d’Affaires Esso <a href="https://www1.fccq.ca/wp-content/uploads/2017/07/Esso-Business-Card-Program-app-AssocBusiness-FR-Carte-premium.pdf" target="_blank">(Premium)</a></li>
+<li>Demande de compte de carte Esso <a href="https://www1.fccq.ca/wp-content/uploads/2017/07/Esso-Business-Card-Program-app-Assoc-FR-individuelle-employe.pdf" target="_blank">(Personnelle)</a></li>
+        
 <!--        </div>-->
+        <hr>
         <div>
             <h2 style="color: #bfa050">Terminal de transaction</h2>
-            <ul>
-            <li>
-<h4>Taux préférentiels sur les transactions avec cartes de crédit Visa sur terminal de Global Payments et TD Canada Trust</h4>                </li>
-            </ul>
+            
+           <a style="color: #bfa050">Solutions de paiement GLOBAL PAYMENTS</a>
+<ul>
+<li><h4>La FCCQ a établi un partenariat exclusif avec Global Payments afin de vous offrir des options avantageuses dans la gestion de crédit et des solutions de paiement. Global Payments, un chef de file dans le domaine du traitement des paiements, vous offre des taux extrêmement avantageux sur Visa, MasterCard, Interac et American Express. Aussi, vous n’aurez pas à payer les frais d’adhésion Global Payments.</h4></li>
+
+Téléchargez le <a href="https://www1.fccq.ca/wp-content/uploads/2018/01/Global-Payment-formulaire-d-inscription-2018.pdf" target="_blank">formulaire d’inscription</a>
+
+<br>Pour en savoir plus, cliquez <a href="https://www.globalpaymentsinc.com/fr-ca" target="_blank">ICI!</a>
+       </ul>     
         </div>
+        <hr>
         <h2 style="color: #bfa050">Assurances</h2>
-<h4>Régime d'assurance collective conçu spécialement pour répondre aux besoins des PME, s'adressant également aux travailleurs autonomes et aux entreprises familiales. <a target="_blank" href="http://www.ccstgeorges.com/86-rgime_dassurance_collective_aux_pme">plus d'info..</a></h4>
+<a style="color: #bfa050">Régime d'assurance collective des chambres de commerce </a>
+        <ul>
+        <li><h4>Depuis sa création en 1970, une seule philosophie a guidé le Régime : fournir des avantages sociaux flexibles, abordables et concurrentiels aux employés de petites entreprises.</h4></li>
+<li><h4>Le Régime a été conçu spécifiquement pour les entreprises de moins de 50 employés et s’adresse autant aux travailleurs autonomes, aux entreprises agricoles, aux entreprises familiales et aux organismes sans but lucratif.</h4></li>
+
+Avantage réservé uniquement aux membres des chambres de commerce.
+
+<br>Pour en savoir plus, cliquez <a href="http://www.ccstgeorges.com/86-rgime_dassurance_collective_aux_pme" target="_blank">ICI!</a>
+        </ul>
+        
         <hr>
         <h2 style="color: #bfa050">Hébergement</h2>
-<!--        <img src="css/logoMarchands/logo___auberge_le_pomerol.png" />-->
         <a style="color: #bfa050" href="https://www.aubergelepomerol.com/" target="_blank">Auberge le Pomerol</a>
         <ul><li><h4>
      Minimum de 15% de rabais sur le tarif régulier à l'Auberge le Pomerol de Montréal, et encore plus en haute saison.
@@ -377,31 +336,79 @@ ou
 </li>
         <li>Station café dans chaque chambre.
 </li>
-<h4>Communiquez directement avec l'auberge Le Pomerol au 514.526.5511 pour faire votre réservation.</h4>
+<h4>Pour faire votre réservation, communiquez directement avec l'Auberge Le Pomerol au 514.526.5511 ou faites votre réservation en ligne dès maintenant en cliquant ICI (les tarifs promotionnels seront automatiquement appliqués). 
+</h4>
         </ul>
-<!--        <img src="css/logoMarchands/hc_horizontal_notag.jpg" />-->
-   
-        <a style="color: #bfa050" href="https://www.originehotels.com/fr" target="_blank">Hotellerie Champêtre</a>
-        <ul>
-        <li>
-        <h4>15% sur le meilleur tarif dans l’un des 31 établissements d'Hotellerie Champêtre.</h4></li></ul>
-                <h4>Communiquez à la CCSG pour obtenir votre code rabais.</h4>
-        
-        
-        <a style="color: #bfa050" href="https://www.choicehotels.ca/fr" target="_blank">Choice Hotels</a>
-        <ul>
-            <li><h4>Économisez jusqu’à 15% avec Choice Hotels®</h4> 
-            </li>
+   <hr>
+ <h2 style="color: #bfa050">Expédition</h2>
+        <a style="color: #bfa050">Prix spéciaux auprès de PUROLATOR, FEDEX et UPS … Un site web pour comparer et expédier !</a>
+<ul>
+<li><h4>FlagShip est le leader canadien dans le service d’expédition à rabais pour les PME depuis 2005. Nous vous offrons une façon simple de comparer les tarifs escomptés directement en ligne, choisir votre courrier préféré et épargner sur vos coûts d’expédition - aussi simple que cela. C’est gratuit et sans obligations !</h4></li>
 
-            <li><h4>Nous sommes fiers d’offrir aux membres de la Chambre de commerce de Saint Georges un minimum de 10 à 15% de rabais d’hôtel sur les bannières populaires telles que ComfortTM, Quality® et Econo Lodge®.</h4>
-            </li>
+<li><h4>En savoir plus sur Flagship <a href="http://www.flagshipcompany.com/fr" target="_blank">www.flagshipcompany.com/fr</a></h4></li>
 
-            <li><h4>Choice Hotels compte plus de 325 hôtels répartis dans l’ensemble des dix provinces – et plus de 6 300 à l’échelle mondiale – de nombreux établissements sont situés dans des emplacements pratiques près des principaux aéroports et autoroutes, des attractions touristiques, des centres d’affaires et des centres commerciaux. En plus, presque tous les hôtels Choice offrent le petit-déjeuner gratuit et un accès Internet gratuit.</h4>
-            </li>
+INSCRIPTION GRATUITE ET SANS OBLIGATION* : www.flagshipcompany.com/chambredecommerce<br>
+
+Pour toute question relative au programme, vous pouvez contacter votre chambre de commerce ou Daniel Rondeau chez FlagShip au 1-866-320-8383.
+*L’approbation de votre compte est à l’entière discrétion de Flagship Courier Solutions Inc.
         </ul>
-                <h4>Communiquez à la CCSG pour obtenir votre code rabais.</h4>    
+        <hr>
+        <h2 style="color: #bfa050">Logiciel/Web</h2>
+        <a style="color: #bfa050">Beavertix</a>
+        <ul>
+        <li><h4>Beavertix est une entreprise québécoise spécialisée dans l’inscription et la billetterie en ligne pour tous genres d’événements: congrès, gala, conférence, souper, golf, levée de fond, etc.</h4></li>
+
+<li><h4>Créez, vendez et analysez vos événements !</h4></li>
+
+<li><h4>Beavertix permettra à votre organisation d’être payée à chaque transaction, d’envoyer automatiquement les billets à vos acheteurs et d’analyser vos résultats en temps réel.</h4></li>
+
+<li><h4>La plateforme a été conçue en fonction de l’organisateur : simple d’utilisation, qu’elle permette une autonomie et qu’elle ne coûte rien à utiliser, c’est votre client qui s’en charge !</h4></li>
+
+Une économie de temps et d’argent que vous apprécierez ! <br>
+
+<a href="http://beavertix.com/fr/" target="_blank">Demandez une démo dès maintenant</a>
+        </ul>
+        <a style="color: #bfa050">Vortex Solution</a>
+        <ul>
+        <li><h4>Vortex Solutionoffre des services sécuritaires et fiables d’hébergement Web, et de stockage de données dans le Cloud comportant de nombreux avantages :</h4></li></ul>
+<ul>
+<li>Grande capacité de stockage pour vos besoins de sauvegarde et de sécurité;</li>
+<li>Bande passante illimitée;</li>
+<li>Service humain de haut niveau;</li>
+<li>Services clé en main pour gros ou petit volume;</li>
+<li>Hébergement de courriels;</li>
+<li>Antivirus;</li>
+<li>Antispam;</li>
+<li>Serveurs performants surveillés 24 heures sur 24;</li>
+<i>Environnement à l’abri des défaillances électriques ou autres;</i>
+<li>Et plus...</li>
+</ul>
+15% de rabais sur les frais d’hébergement Web offert aux membres FCCQ.<br>
+ 
+Pour en savoir plus, cliquez <a href="https://www.vortexsolution.com/conception-internet-montreal.html" target="_blank">ICI!</a>
+           <hr>
+        Pour toutes questions sur les rabais et avantages offerts aux membres, téléphonez à votre Chambre! 418.228.7879. 
     </div>
+    
 
+    <!--    ***************       Test pour le iframe ou l'équivalent      ***************-->
+<!--    *************************************************--> 
+<!--<div id="MyLittleBrowser" style="width: 100%; height: 200px; border: 1px solid #000; overflow: scroll;"></div>-->
+       
+<!--    <iframe  src="http://amcreatives.ca/" style="border: 0; width: 100%; height: 500px"></iframe>-->
+<!--575px-->
+    
+<div style="border: 2px solid #D5CC5A; overflow: hidden; margin: 15px auto; max-width: 80%;">
+<iframe scrolling="no" src="http://www.ccstgeorges.com/" style="border: 0px none; margin-left: -20px; height: 1012px; margin-top: -740px; width: 630px;">
+</iframe>
+</div>
+    
+
+    
+  <!--    ***************       Test pour le iframe ou l'équivalent      ***************-->
+<!--    *************************************************-->  
+    
+    
 <!--    ***************       Footer      ***************-->
 <!--    *************************************************--> 
     <div data-role="footer" data-type="footer" data-position="fixed"   style="overflow:hidden; text-align: center">
