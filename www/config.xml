@@ -13,12 +13,10 @@
 <allow-intent href="https://*/*" />
 
 <!--    to allow ccsg iFrame only-->
-    <allow-navigation href="http://www.ccstgeorges.com/" />
+<!--    <allow-navigation href="http://www.ccstgeorges.com/" />-->
     
-<!--
-    To allow any iFrame
+<!--    To allow any iFrame-->
 <allow-navigation href="*" />
--->
     
 <platform name = 'android'>
 <!--    <icon src='icons/android/ldpi.png' platform='android' qualifier='ldpi' />-->
