@@ -7,13 +7,13 @@ function onLoad() {
 //    $(document).ready(function(){
 
   // Enable to debug issues.
-   window.plugins.OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
+//   window.plugins.OneSignal.setLogLevel({logLevel: 4, visualLevel: 4}); removed lately
   
   var notificationOpenedCallback = function(jsonData) {
     console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
   };
 
-    OneSignal.setLogLevel(OneSignal.LOG_LEVEL.DEBUG, OneSignal.LOG_LEVEL.DEBUG);
+//    OneSignal.setLogLevel(OneSignal.LOG_LEVEL.DEBUG, OneSignal.LOG_LEVEL.DEBUG); removed lately
     
 //    window.plugins.OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
     alert("ready");
