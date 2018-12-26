@@ -1,9 +1,9 @@
 // Add to index.js or the first page that loads with your app.
 // For Intel XDK and please add this to your app.js.
-//function onLoad() {
+function onLoad() {
         alert("ready for Onesignal: avant le addEventListner");
 
-document.addEventListener("deviceready", function () {
+//document.addEventListener("deviceready", function () {
 //    $(document).ready(function(){
 
   // Enable to debug issues.
@@ -21,5 +21,6 @@ document.addEventListener("deviceready", function () {
     .startInit("8388c0ef-1492-4892-9296-17091773564c")
     .handleNotificationOpened(notificationOpenedCallback)
     .endInit();
-}, false);
-//}
+}
+
+//                        , false);
