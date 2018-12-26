@@ -1,8 +1,8 @@
 // Add to index.js or the first page that loads with your app.
 // For Intel XDK and please add this to your app.js.
-
-//document.addEventListener('deviceready', function () {
-    $(document).ready(function(){
+function onLoad() {
+document.addEventListener("deviceready", function () {
+//    $(document).ready(function(){
 
   // Enable to debug issues.
    window.plugins.OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
@@ -17,5 +17,5 @@
     .startInit("8388c0ef-1492-4892-9296-17091773564c")
     .handleNotificationOpened(notificationOpenedCallback)
     .endInit();
-});
-//    , false);
+}, false);
+}
