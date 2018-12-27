@@ -25,7 +25,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
 //        console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
     };
 //    alert(" Init ready");
-      window.plugins.OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
+//      window.plugins.OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
       window.plugins.OneSignal
         .startInit("8388c0ef-1492-4892-9296-17091773564c")
         .handleNotificationOpened(notificationOpenedCallback)
