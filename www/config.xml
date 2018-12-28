@@ -10,7 +10,7 @@
 <plugin name="cordova-plugin-whitelist" source="npm"/>
     
 <!--    From OneSignal Web site Doc-->
-<gap:plugin name="onesignal-cordova-plugin" spec="^2.4.6" source="npm" />
+<gap:plugin name="onesignal-cordova-plugin" spec="^2.4.5" source="npm" />
     
 <name>CCSG</name>
 <allow-intent href="http://*/*" />
