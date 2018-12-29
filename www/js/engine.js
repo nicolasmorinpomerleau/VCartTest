@@ -59,7 +59,9 @@ function Validate(){
 //                    Numero.innerHTML = "Veuillez <a href="+'tel:418 228-7879'+"> tél: 418 228-7879</a>";
     window.location.href = "#page2";
     }
-    else if(res.answer == 'userNotFind'){
+    else{
+        window.location.href = "#page1";
+        if(res.answer == 'userNotFind'){
         tentative = tentative +1;
         if(tentative < 3){
             var myCollection = document.getElementsByTagName("label");
@@ -74,7 +76,7 @@ function Validate(){
             var myCollection = document.getElementsByTagName("label");
             myCollection[5].innerHTML = "Veuillez contacter l'administration de la Chambre de Commerce de Saint-Georges, <a href=tel:418 228-7879> tél: 418 228-7879</a>";
         }
-        window.location.href = "#page1";
+       }
     }
   },
 error: function(res) {
