@@ -10,7 +10,7 @@
 <plugin name="cordova-plugin-whitelist" source="npm"/>
     
 <!--    for the interaciton and the management of the iframes-->
-<plugin name="cordova-plugin-inappbrowser" source="pgb"/>
+<plugin name="cordova-plugin-inappbrowser" source="npm"/>
     
 <!--    From OneSignal Web site Doc-->
 <gap:plugin name="onesignal-cordova-plugin" spec="2.4.5" source="npm" />
