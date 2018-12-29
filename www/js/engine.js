@@ -65,20 +65,16 @@ function Validate(){
             var myCollection = document.getElementsByTagName("label");
             if(tentative==1){
                myCollection[4].innerHTML = "Le Courriel ou le code n'est pas correct, veuillez réessayer de nouveau.";
-               window.location.href = "#page1";
             }
             else{
                myCollection[5].innerHTML = "Le Courriel ou le code n'est pas correct, veuillez réessayer de nouveau.";
-              window.location.href = "#page1";
-
             }
         }
         else{
             var myCollection = document.getElementsByTagName("label");
             myCollection[5].innerHTML = "Veuillez contacter l'administration de la Chambre de Commerce de Saint-Georges, <a href=tel:418 228-7879> tél: 418 228-7879</a>";
-             window.location.href = "#page1";
-
         }
+        window.location.href = "#page1";
     }
   },
 error: function(res) {
