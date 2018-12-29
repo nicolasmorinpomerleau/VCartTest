@@ -9,6 +9,9 @@
 <!-- versionCode is optional and Android only -->
 <plugin name="cordova-plugin-whitelist" source="npm"/>
     
+<!--    for the interaciton and the management of the iframes-->
+<plugin name="cordova-plugin-inappbrowser" source="pgb" spec="1.0.1" />
+    
 <!--    From OneSignal Web site Doc-->
 <gap:plugin name="onesignal-cordova-plugin" spec="2.4.5" source="npm" />
     
