@@ -24,7 +24,17 @@ function Validate(){
 //            url: 'http://localhost:4000/check',
     url:'https://5m1qfi37ie.execute-api.eu-west-1.amazonaws.com/Dev/emailCode',
 //            url:'https://facjip5ul0.execute-api.us-east-2.amazonaws.com/default/VCartFunction',            
-            
+//        While(cond2!="fine")  {
+//            ajax{
+//                poste
+//                ...
+//                success:
+//               cond2
+//                
+//            }
+//        }
+//    console.log
+        
 //         url: '192.168.1.66/check',
     type: 'POST',
     dataType: 'json',
@@ -55,14 +65,19 @@ function Validate(){
             var myCollection = document.getElementsByTagName("label");
             if(tentative==1){
                myCollection[4].innerHTML = "Le Courriel ou le code n'est pas correct, veuillez réessayer de nouveau.";
+               window.location.href = "#page1";
             }
             else{
                myCollection[5].innerHTML = "Le Courriel ou le code n'est pas correct, veuillez réessayer de nouveau.";
+              window.location.href = "#page1";
+
             }
         }
         else{
             var myCollection = document.getElementsByTagName("label");
             myCollection[5].innerHTML = "Veuillez contacter l'administration de la Chambre de Commerce de Saint-Georges, <a href=tel:418 228-7879> tél: 418 228-7879</a>";
+             window.location.href = "#page1";
+
         }
     }
   },
