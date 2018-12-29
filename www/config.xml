@@ -18,6 +18,10 @@
 <name>CCSG</name>
 <allow-intent href="http://*/*" />
 <allow-intent href="https://*/*" />
+    
+<allow-intent href="tel:*"/>
+<!--<allow-intent href="sms:*"/>-->
+<allow-intent href="mailto:*"/>
 
 <!--    to allow ccsg iFrame only-->
 <!--    <allow-navigation href="http://www.ccstgeorges.com/" />-->
