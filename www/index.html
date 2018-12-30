@@ -109,6 +109,7 @@
 -->
 </div><!-- /header -->
  
+<!--
     <script type="text/javascript" charset="utf-8">
 alert("wait for device api");
     // Wait for device API libraries to load
@@ -129,6 +130,7 @@ alert("on device..");
     }
 
     </script>
+-->
 <div data-role="collapsibleset" data-theme="b" data-content-theme="e">
     
 <!--    *************** Restauration page ***************-->
@@ -142,12 +144,15 @@ alert("on device..");
            </div>  
         
         
-        <script>            
+        <script type="text/javascript" charset="utf-8"> 
+            document.addEventListener("deviceready", onDeviceReady, false);
+            alert("device ready");
+            
+            function onDeviceReady() {
+                alert("device fired");
             var url = "http://amcreatives.ca/VircaPages/";
             var target = "_blank";
             var options = "location=yes,clearsessioncache=yes";
-// alert("open will begin");
-   
             
             inAppBrowserRef = cordova.InAppBrowser.open(url, target, options);
             alert("loadstart will begin");
@@ -157,7 +162,8 @@ alert("on device..");
                 alert("yupi");
                 $('#status-message').text("loading please wait ...");
             }
-        
+
+            } //onDeviceReady
         </script>
     </div>
 <!--    ***************   Service page    ***************-->
