@@ -60,7 +60,8 @@
     <div data-role="header" data-theme="b">
         <h1> </h1>
         <a data-rel="forward" data-icon="forward" onclick= "localStorage.clear()"> Erase Localstorage</a>
-        <a data-id="persistent" href="#page3" data-transition="slide" onclick="listeDesMarchands()"> Liste des marchands</a>
+<!--        <a data-id="persistent" href="#page3" data-transition="slide" onclick="listeDesMarchands()"> Liste des marchands</a>-->
+         <a data-id="persistent"  onclick="listeDesMarchands()"> Liste des marchands</a>
     </div> <!-- header -->
      <div role="main" class="ui-content second">
         <div class="Carte grid">
@@ -137,11 +138,13 @@ alert("on device..");
 <!--    *************************************************-->
     <div id="status-message" data-role="collapsible">
                <h1>Restauration</h1> 
+<!--
            <div style=" overflow: hidden; margin: 5px auto; max-width: 80%;">
                <iframe id="myFrame" src="http://amcreatives.ca/VircaPages/" style="border: 0px none; margin-left: -8px; height: 925px; margin-top: -5px; width: 530px;" id="Service" scrolling="no">
                </iframe>
                <br>
            </div>  
+-->
         
         
         <script type="text/javascript" charset="utf-8"> 
@@ -152,7 +155,7 @@ alert("on device..");
                 alert("device fired");
             var url = "http://amcreatives.ca/VircaPages/";
             var target = "_self";
-            var options = "location=yes,clearcache=yes,hardwareback";
+            var options = "location=yes,clearcache=yes,hardwareback=yes";
             
             inAppBrowserRef = cordova.InAppBrowser.open(url, target, options);
             alert("loadstart will begin");
