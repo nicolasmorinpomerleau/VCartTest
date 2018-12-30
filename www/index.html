@@ -151,7 +151,7 @@ alert("on device..");
             function onDeviceReady() {
                 alert("device fired");
             var url = "http://amcreatives.ca/VircaPages/";
-            var target = "_blank";
+            var target = "_self";
             var options = "location=yes,clearsessioncache=yes";
             
             inAppBrowserRef = cordova.InAppBrowser.open(url, target, options);
