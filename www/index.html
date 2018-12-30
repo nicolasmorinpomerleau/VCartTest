@@ -60,7 +60,7 @@
     <div data-role="header" data-theme="b">
         <h1> </h1>
         <a data-rel="forward" data-icon="forward" onclick= "localStorage.clear()"> Erase Localstorage</a>
-        <a data-id="persistent" href="#page3" data-transition="slide"> Liste des marchands</a>
+        <a data-id="persistent" href="#page3" data-transition="slide" onclick="listeDesMarchands()"> Liste des marchands</a>
     </div> <!-- header -->
      <div role="main" class="ui-content second">
         <div class="Carte grid">
@@ -145,14 +145,14 @@ alert("on device..");
         
         
         <script type="text/javascript" charset="utf-8"> 
-//            document.addEventListener("deviceready", onDeviceReady, false);
+//            listeDesMarchands.addEventListener("on", onDeviceReady, false);
             alert("je suis dans restauration");
             
-//            function onDeviceReady() {
+        function listeDesMarchands() {
                 alert("device fired");
             var url = "http://amcreatives.ca/VircaPages/";
             var target = "_self";
-            var options = "location=yes,clearsessioncache=yes";
+            var options = "location=yes,clearcache=yes,hardwareback";
             
             inAppBrowserRef = cordova.InAppBrowser.open(url, target, options);
             alert("loadstart will begin");
@@ -161,7 +161,7 @@ alert("on device..");
             function loadStartCallBack() {
                 alert("yupi");
                 $('#status-message').text("loading please wait ...");
-//            }
+            }//listeDesMarchands
 
             } //onDeviceReady
         </script>
