@@ -19,6 +19,9 @@
     <script type="text/javascript" src="cordova.js"></script>
     <script src="js/OneSignal.js"></script>
     <script src="js/engine.js"></script>
+    <script>
+        window.cache.clear( success, error );
+    </script>
 </head>
 <body>
     <!--
@@ -60,8 +63,10 @@
     <div data-role="header" data-theme="b">
         <h1> </h1>
         <a data-rel="forward" data-icon="forward" onclick= "localStorage.clear()"> Erase Localstorage</a>
-<!--        <a data-id="persistent" href="#page3" data-transition="slide" onclick="listeDesMarchands()"> Liste des marchands</a>-->
-         <a data-id="persistent"  onclick="listeDesMarchands()"> Liste des marchands</a>
+        <a data-id="persistent" href="#page3" data-transition="slide"> Liste des marchands</a>
+<!--         <a data-id="persistent"  onclick="listeDesMarchands()"> Liste des marchands</a>-->
+         <a data-id="persistent" href="#page4" data-transition="slide"> Événements</a>
+
     </div> <!-- header -->
      <div role="main" class="ui-content second">
         <div class="Carte grid">
@@ -93,11 +98,13 @@
     ****************************
 -->
 <div data-role="page" id="page3"> 
-<div data-role="header" style="overflow:hidden;" data-id="persistent" data-position="fixed">
+<div data-role="header" style="overflow:hidden; background-color: #333; color: white;" data-id="persistent" data-position="fixed">
 <h1>Liste des marchands</h1>
-<!--                <a data-rel="back" data-icon="back">Retour</a>  -->
-<!--    <a data-rel="back" data-icon="back">Carte</a>-->
-    <a data-id="persistent" href="#page2" data-transition="slide" data-icon="back"> Carte</a>
+
+    <!--    <a data-rel="back" data-icon="back">Carte</a> conflict with ifram, so not use this is liste des marchands is in iframe-->
+<!--    <a data-id="persistent" href="#page2" data-transition="slide" data-icon="back"> Carte</a>-->
+    <a data-id="persistent" href="#page2" data-transition="slide"> Carte</a>
+    <a data-id="persistent" href="#page5" data-transition="slide"> Offres spéciales</a>
 <!--
     <div data-role="navbar"> 
         <ul>
@@ -110,55 +117,29 @@
 -->
 </div><!-- /header -->
  
-<!--
-    <script type="text/javascript" charset="utf-8">
-alert("wait for device api");
-    // Wait for device API libraries to load
-    //
-    document.addEventListener("deviceready", onDeviceReady, false);
-alert("on device..");
-
-    // device APIs are available
-    //
-    function onDeviceReady() {
-        alert(" ready fired");
-        window.open = cordova.InAppBrowser.open;
-         var ref = window.open('http://apache.org', '_blank', 'location=yes');
-         ref.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
-         ref.addEventListener('loadstop', function(event) { alert('stop: ' + event.url); });
-         ref.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
-         ref.addEventListener('exit', function(event) { alert(event.type); });
-    }
-
-    </script>
--->
 <div data-role="collapsibleset" data-theme="b" data-content-theme="e">
     
 <!--    *************** Restauration page ***************-->
 <!--    *************************************************-->
     <div id="status-message" data-role="collapsible">
                <h1>Restauration</h1> 
-<!--
            <div style=" overflow: hidden; margin: 5px auto; max-width: 80%;">
                <iframe id="myFrame" src="http://amcreatives.ca/VircaPages/" style="border: 0px none; margin-left: -8px; height: 925px; margin-top: -5px; width: 530px;" id="Service" scrolling="no">
                </iframe>
                <br>
            </div>  
--->
         
-        
+<!--
+Continue this later..
         <script type="text/javascript" charset="utf-8"> 
 //            listeDesMarchands.addEventListener("on", onDeviceReady, false);
-            alert("je suis dans restauration");
             
         function listeDesMarchands() {
-                alert("device fired");
             var url = "http://amcreatives.ca/VircaPages/";
             var target = "_self";
-            var options = "location=yes,clearcache=yes,hardwareback=yes";
+            var options = "location=yes,clearcache=yes";
             
             inAppBrowserRef = cordova.InAppBrowser.open(url, target, options);
-            alert("loadstart will begin");
             inAppBrowserRef.addEventListener('loadstart', loadStartCallBack);
             
             function loadStartCallBack() {
@@ -168,6 +149,7 @@ alert("on device..");
 
             } //onDeviceReady
         </script>
+-->
     </div>
 <!--    ***************   Service page    ***************-->
 <!--    *************************************************-->
@@ -198,20 +180,80 @@ alert("on device..");
         </div>
     </div>
 </div>
-    
-<div style=" overflow: hidden; margin: 5px auto; max-width: 80%;">
-<iframe  src="http://www.ccstgeorges.com/" style="border: 0px none; margin-left: -20px; height: 1012px; margin-top: -740px; width: 630px;">
-</iframe>
-</div>
+
     
 <!--    ***************       Footer      ***************-->
 <!--    *************************************************--> 
-    <div id="footer_2" data-role="footer" data-type="footer" data-position="fixed"  style="overflow:hidden; text-align: center">
+    <div id="footer_2" data-role="footer" data-type="footer" data-position="fixed"  style="overflow:hidden; text-align: center;">
 <!--        data-id="persistent" to persist in the slide transition-->
-    <hp style="text-align:center;"><a  style="color: white" href="http://www.amcreatives.ca" target="_blank">www.amcreatives.ca</a></hp>
+    <hp style="text-align:center;"><a  style="color: white;font-weight:normal !important;text-decoration: none !important;" href="http://www.amcreatives.ca" target="_blank">amcreatives.ca</a></hp>
     </div> <!-- Footer -->
     
 </div><!-- /Page3 -->
 
+<!--
+    ****************************
+             page 4
+    ****************************
+-->
+<!--    Page des événements\activités-->
+<div data-role="page" id="page4"> 
+    <div data-role="header" style="overflow:hidden; background-color: #333; color: white;" data-id="persistent" data-position="fixed">
+        <h1> Événements/Activités</h1>
+        <a data-id="persistent" href="#page2" data-transition="slide" > Carte</a>
+    </div>
+    <div>
+    <div style=" overflow: hidden; margin: 5px auto; max-width: 80%;">
+    <iframe  src="http://www.ccstgeorges.com/" style="border: 0px none; margin-left: -20px; height: 1012px; margin-top: -740px; width: 630px;">
+    </iframe>
+    </div>
+
+        http://amcreatives.ca/VircaEvenements/
+
+        <!--    ***************       Footer      ***************-->
+    <!--    *************************************************--> 
+        <div id="footer_2" data-role="footer" data-type="footer" data-position="fixed"  style="overflow:hidden; text-align: center;">
+    <!--        data-id="persistent" to persist in the slide transition-->
+        <hp style="text-align:center;"><a  style="color: white;font-weight:normal !important;text-decoration: none !important;" href="http://www.amcreatives.ca" target="_blank">amcreatives.ca</a></hp>
+        </div> <!-- Footer -->
+    </div>
+</div>  <!--   /page 4  -->
+
+
+<!--
+    ****************************
+             page 5
+    ****************************
+-->
+<!--    Page des offres spéciales des marchands-->
+<div data-role="page" id="page5"> 
+    <div data-role="header" style="overflow:hidden;background-color: #333; color: white;" data-id="persistent" data-position="fixed">
+        <h1> Offres spéciales</h1>
+        <a data-id="persistent" href="#page2" data-transition="slide" > Carte</a>
+        <a data-id="persistent" href="#page3" data-transition="slide"> Liste des marchands</a>
+    </div>
+<div>
+<!--
+    <div style=" overflow: hidden; margin: 5px auto; max-width: 80%;">
+    <iframe  src="http://www.ccstgeorges.com/" style="border: 0px none; margin-left: -20px; height: 1012px; margin-top: -740px; width: 630px;">
+    </iframe>
+    </div>
+-->
+    <div style=" overflow: hidden; margin: 5px auto; max-width: 90%;">
+        <iframe  src="http://amcreatives.ca/VircaEvenements" style="border: 0px none; width: 100%;" scrolling="no">
+        </iframe>
+    </div>
+    
+    
+<!--    ***************       Footer      ***************-->
+<!--    *************************************************--> 
+    <div id="footer_2" data-role="footer" data-type="footer" data-position="fixed"  style="overflow:hidden; text-align: center;">
+<!--        data-id="persistent" to persist in the slide transition-->
+    <hp style="text-align:center;"><a  style="color: white; font-weight:normal !important;text-decoration: none !important;" href="http://www.amcreatives.ca" target="_blank">amcreatives.ca</a></hp>
+    </div> <!-- Footer -->
+</div>
+</div>  <!--   /page 5  -->
+    
+    
 </body>
 </html>
