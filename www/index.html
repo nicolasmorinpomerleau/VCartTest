@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
     
 <!--    To clear the iframe cache-->
-<!--    <meta HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE"> -->
+    <meta HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE"> 
     
     <title>Carte de membre virtuelle</title>
     <link rel="stylesheet" href="css/style.css" />
@@ -19,9 +19,11 @@
     <script type="text/javascript" src="cordova.js"></script>
     <script src="js/OneSignal.js"></script>
     <script src="js/engine.js"></script>
+<!--
     <script>
         window.cache.clear( success, error );
     </script>
+-->
 </head>
 <body>
     <!--
@@ -99,7 +101,7 @@
 -->
 <div data-role="page" id="page3"> 
 <div data-role="header" style="overflow:hidden; background-color: #333; color: white;" data-id="persistent" data-position="fixed">
-<h1>Liste des marchands</h1>
+<h1 style=" font-weight:normal !important;font-size: 1.1em;">Liste des marchands</h1>
 
     <!--    <a data-rel="back" data-icon="back">Carte</a> conflict with ifram, so not use this is liste des marchands is in iframe-->
 <!--    <a data-id="persistent" href="#page2" data-transition="slide" data-icon="back"> Carte</a>-->
@@ -199,7 +201,7 @@ Continue this later..
 <!--    Page des événements\activités-->
 <div data-role="page" id="page4"> 
     <div data-role="header" style="overflow:hidden; background-color: #333; color: white;" data-id="persistent" data-position="fixed">
-        <h1> Événements/Activités</h1>
+        <h1 style=" font-weight:normal !important;font-size: 1.1em;"> Événements/Activités</h1>
         <a data-id="persistent" href="#page2" data-transition="slide" > Carte</a>
     </div>
     <div>
@@ -228,7 +230,7 @@ Continue this later..
 <!--    Page des offres spéciales des marchands-->
 <div data-role="page" id="page5"> 
     <div data-role="header" style="overflow:hidden;background-color: #333; color: white;" data-id="persistent" data-position="fixed">
-        <h1> Offres spéciales</h1>
+        <h1 style=" font-weight:normal !important;font-size: 1.1em;"> Offres spéciales</h1>
         <a data-id="persistent" href="#page2" data-transition="slide" > Carte</a>
         <a data-id="persistent" href="#page3" data-transition="slide"> Liste des marchands</a>
     </div>
