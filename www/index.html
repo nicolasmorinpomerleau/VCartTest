@@ -64,7 +64,37 @@
 <div data-role="page" id="page2">
     <div data-role="header" data-theme="b">
         <h1> </h1>
-        <a data-rel="forward" data-icon="forward" onclick= "localStorage.clear()"> Erase Localstorage</a>
+        <a data-rel="forward" data-icon="forward" onclick= "Storage()"> Erase Localstorage</a>
+        <script>
+            var email = localStorage.Email;
+            var code = localStorage.code;
+            var name = localStorage.name;
+            var company = localStorage.compagny;
+            var memberNumber = "#"+localStorage.membreNumber;
+        function Storage(){   
+                        alert("Juste avant: " +localStorage.Email+  " ** ici ");
+
+//            localStorage.clear();
+            
+//            Clear the cache
+            var success = function(status) {
+                alert('Message: ' + status);
+            };
+            var error = function(status) {
+                alert('Error: ' + status);
+            };
+            window.CacheClear(success, error);
+            alert("juste après: " +localStorage.Email+ "ici..");
+
+            localStorage.Email         = email;
+            localStorage.code          = code;
+            localStorage.name          = name;
+            localStorage.compagny      = company;
+            localStorage.membreNumber  = memberNumber;
+            alert("la valeur persistente: "+ email);
+        }
+            alert("la valeur persistente: " +email);
+        </script>
         <a data-id="persistent" href="#page3" data-transition="slide"> Liste des marchands</a>
 <!--         <a data-id="persistent"  onclick="listeDesMarchands()"> Liste des marchands</a>-->
          <a data-id="persistent" href="#page4" data-transition="slide"> Événements</a>
