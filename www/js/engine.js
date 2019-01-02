@@ -5,8 +5,8 @@ function Storage(){
 //$('#myFrame').attr('src', "http://amcreatives.ca/VircaPages/");
 //document.getElementsByTagName('iframe')src="http://amcreatives.ca/VircaPages/"
     
-   $.getJSON("http://amcreatives.ca/files/test.json",function(data,status,xhr){
-      alert(data);
+   $.getJSON("https://s3-eu-west-1.amazonaws.com/virtualcard/marchand.json",function(data,status,xhr){
+     alert(data);
       alert(status);
 
     });

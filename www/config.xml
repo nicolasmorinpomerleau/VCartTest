@@ -5,7 +5,7 @@
     versionCode = "17"      
    version     = "1.0.7" > 
 <access origin="https://5m1qfi37ie.execute-api.eu-west-1.amazonaws.com/Dev/emailCode"/>
-<access origin="*"/>
+<access origin="https://s3-eu-west-1.amazonaws.com/virtualcard/marchand.json"/>
 
 <!-- versionCode is optional and Android only -->
 <plugin name="cordova-plugin-whitelist" source="npm"/>
