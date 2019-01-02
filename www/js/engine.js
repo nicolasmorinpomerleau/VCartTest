@@ -5,8 +5,8 @@ function Storage(){
 //$('#myFrame').attr('src', "http://amcreatives.ca/VircaPages/");
 //document.getElementsByTagName('iframe')src="http://amcreatives.ca/VircaPages/"
     
-   $.getJSON("https://s3-eu-west-1.amazonaws.com/virtualcard/marchand.json",function(data,status,xhr){
-     alert(data);
+   $.getJSON("https://s3-eu-west-1.amazonaws.com/virtualcard/marchand.json",function(data){
+     alert(data[0].Marchand1);
       alert(status);
 
     });
@@ -20,23 +20,23 @@ function Storage(){
 
 }
 
-//$(document).ready(function() {
-//    $('#myFrame').attr('src', "http://amcreatives.ca/VircaPages/");
-//    
-//       $.getJSON("http://amcreatives.ca/files/test.json",function(data){
-//      alert(data);
-//    });
-//    
-//      $("#boutton").click(function(){
-//    $.getJSON("demo_ajax_json.js", function(result){
-//      $.each(result, function(i, field){
-//          alert(field);
-//        $("div").append(field + " ");
-//      });
-//    });
-//  });
-//
-//});
+$(document).ready(function() {
+    $('#myFrame').attr('src', "http://amcreatives.ca/VircaPages/");
+    
+       $.getJSON("http://amcreatives.ca/files/test.json",function(data){
+      alert(data);
+    });
+    
+      $("#boutton").click(function(){
+    $.getJSON("https://s3-eu-west-1.amazonaws.com/virtualcard/marchand.json", function(result){
+      $.each(result, function(i, field){
+          alert(field);
+        $("div").append(field + " ");
+      });
+    });
+  });
+
+});
 
 $(function(){
         if(localStorage.Email!=undefined && localStorage.code != undefined){
