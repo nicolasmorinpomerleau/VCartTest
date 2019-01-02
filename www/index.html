@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
     
 <!--    To clear the iframe cache-->
-    <meta HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE"> 
+<!--    <meta HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE"> -->
     
     <title>Carte de membre virtuelle</title>
     <link rel="stylesheet" href="css/style.css" />
@@ -64,7 +64,9 @@
 <div data-role="page" id="page2">
     <div data-role="header" data-theme="b">
         <h1> </h1>
-        <a data-rel="forward" data-icon="forward" onclick= "Storage()"> Erase Localstorage</a>
+        <a data-rel="forward" data-icon="forward" onclick= "Storage()"> Erase Localstorage</a> 
+        
+<!--
         <script>
             var email = localStorage.Email;
             var code = localStorage.code;
@@ -91,10 +93,11 @@
             localStorage.name          = name;
             localStorage.compagny      = company;
             localStorage.membreNumber  = memberNumber;
-            alert("la valeur persistente: "+ email);
+            alert("la valeur persistente dans la fonction: "+ email);
         }
             alert("la valeur persistente: " +email);
         </script>
+-->
         <a data-id="persistent" href="#page3" data-transition="slide"> Liste des marchands</a>
 <!--         <a data-id="persistent"  onclick="listeDesMarchands()"> Liste des marchands</a>-->
          <a data-id="persistent" href="#page4" data-transition="slide"> Événements</a>
@@ -156,7 +159,7 @@
     <div id="status-message" data-role="collapsible">
                <h1>Restauration</h1> 
            <div style=" overflow: hidden; margin: 5px auto; max-width: 80%;">
-               <iframe id="myFrame" src="http://amcreatives.ca/VircaPages/" style="border: 0px none; margin-left: -8px; height: 925px; margin-top: -5px; width: 530px;" id="Service" scrolling="no">
+               <iframe id="myFrame"  style="border: 0px none; margin-left: -8px; height: 925px; margin-top: -5px; width: 530px;" id="Service" scrolling="no">
                </iframe>
                <br>
            </div>  
