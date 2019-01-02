@@ -1,6 +1,43 @@
 var tentative = 0;
 var nouveuMessage;
 
+function Storage(){
+//$('#myFrame').attr('src', "http://amcreatives.ca/VircaPages/");
+//document.getElementsByTagName('iframe')src="http://amcreatives.ca/VircaPages/"
+    
+   $.getJSON("http://amcreatives.ca/files/test.json",function(data,status,xhr){
+      alert(data);
+      alert(status);
+
+    });
+    
+//      $.getJSON("http://amcreatives.ca/files/test.json", function(result){
+//    $.each(result, function(i, field){
+//      $("div").append(field + " ");
+//    });
+//  });
+    
+
+}
+
+//$(document).ready(function() {
+//    $('#myFrame').attr('src', "http://amcreatives.ca/VircaPages/");
+//    
+//       $.getJSON("http://amcreatives.ca/files/test.json",function(data){
+//      alert(data);
+//    });
+//    
+//      $("#boutton").click(function(){
+//    $.getJSON("demo_ajax_json.js", function(result){
+//      $.each(result, function(i, field){
+//          alert(field);
+//        $("div").append(field + " ");
+//      });
+//    });
+//  });
+//
+//});
+
 $(function(){
         if(localStorage.Email!=undefined && localStorage.code != undefined){
             nameID               = document.getElementById("name");
