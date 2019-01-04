@@ -1,11 +1,25 @@
 var tentative = 0;
 var nouveuMessage;
 
+
+        function ListeDesMarchands(){
+            $.getJSON("https://s3-eu-west-1.amazonaws.com/virtualcard/marchand.json",function(data,status){
+                $('#Restauration').append(Construct(data));
+//                $('#Restauration').listview('refresh')
+             console.log(data[0].Marchand1);
+//              alert(status);
+            });
+        };
+function Construct(data){
+    return 
+        +data[0].Marchand1 ;
+};
+
 function Storage(){
 //$('#myFrame').attr('src', "http://amcreatives.ca/VircaPages/");
 //document.getElementsByTagName('iframe')src="http://amcreatives.ca/VircaPages/"
     
-   $.getJSON("https://s3-eu-west-1.amazonaws.com/virtualcard/marchand.json",function(data){
+   $.getJSON("http://amcreatives.ca/files/test.json",function(data){
      alert(data[0].Marchand1);
       alert(status);
 
@@ -14,29 +28,29 @@ function Storage(){
 //      $.getJSON("http://amcreatives.ca/files/test.json", function(result){
 //    $.each(result, function(i, field){
 //      $("div").append(field + " ");
-//    });
+//    }); https://s3-eu-west-1.amazonaws.com/virtualcard/marchand.json
 //  });
     
 
 }
 
-$(document).ready(function() {
-    $('#myFrame').attr('src', "http://amcreatives.ca/VircaPages/");
-    
-       $.getJSON("http://amcreatives.ca/files/test.json",function(data){
-      alert(data);
-    });
-    
-      $("#boutton").click(function(){
-    $.getJSON("https://s3-eu-west-1.amazonaws.com/virtualcard/marchand.json", function(result){
-      $.each(result, function(i, field){
-          alert(field);
-        $("div").append(field + " ");
-      });
-    });
-  });
-
-});
+//$(document).ready(function() {
+//    $('#myFrame').attr('src', "http://amcreatives.ca/VircaPages/");
+//    
+//       $.getJSON("http://amcreatives.ca/files/test.json",function(data){
+//      alert(data);
+//    });
+//    
+//      $("#boutton").click(function(){
+//    $.getJSON("https://s3-eu-west-1.amazonaws.com/virtualcard/marchand.json", function(result){
+//      $.each(result, function(i, field){
+//          alert(field);
+//        $("div").append(field + " ");
+//      });
+//    });
+//  });
+//
+//});
 
 $(function(){
         if(localStorage.Email!=undefined && localStorage.code != undefined){

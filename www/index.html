@@ -65,7 +65,7 @@
     <div data-role="header" data-theme="b">
         <h1> </h1>
         <a data-rel="forward" data-icon="forward" onclick= "Storage()"> Erase Localstorage</a> 
-                <a id="#boutton"> boute</a> 
+<!--                <a id="#boutton"> boute</a> -->
 
 <!--
         <script>
@@ -99,9 +99,10 @@
             alert("la valeur persistente: " +email);
         </script>
 -->
-        <a data-id="persistent" href="#page3" data-transition="slide"> Liste des marchands</a>
+        <a data-id="persistent" href="#page3" data-transition="slide" onclick="ListeDesMarchands()"> Liste des marchands</a>
+        
 <!--         <a data-id="persistent"  onclick="listeDesMarchands()"> Liste des marchands</a>-->
-         <a data-id="persistent" href="#page4" data-transition="slide"> Événements</a>
+         <a data-id="persistent" href="#page4" data-transition="slide" onclick="events()"> Événements</a>
 
     </div> <!-- header -->
      <div role="main" class="ui-content second">
@@ -159,19 +160,29 @@
 <!--    *************************************************-->
     <div id="status-message" data-role="collapsible">
                <h1>Restauration</h1> 
+        <div id="Restauration"></div>
+                <script>
+//        function ListeDesMarchands(){
+//            $.getJSON("http://amcreatives.ca/files/test.json",function(data,status){
+//             alert(data[0].Marchand1);
+//              alert(status);
+//            });
+//        }
+        
+        </script>
+        
            <div style=" overflow: hidden; margin: 5px auto; max-width: 80%;">
                <iframe id="myFrame"  style="border: 0px none; margin-left: -8px; height: 925px; margin-top: -5px; width: 530px;" id="Service" scrolling="no">
                </iframe>
                <br>
            </div>  
         
-<!--
-Continue this later..
+<!--Continue this..-->
         <script type="text/javascript" charset="utf-8"> 
 //            listeDesMarchands.addEventListener("on", onDeviceReady, false);
             
-        function listeDesMarchands() {
-            var url = "http://amcreatives.ca/VircaPages/";
+        function events() {
+            var url = "http://amcreatives.ca/VircaEvenements/";
             var target = "_self";
             var options = "location=yes,clearcache=yes";
             
@@ -185,7 +196,6 @@ Continue this later..
 
             } //onDeviceReady
         </script>
--->
     </div>
 <!--    ***************   Service page    ***************-->
 <!--    *************************************************-->
