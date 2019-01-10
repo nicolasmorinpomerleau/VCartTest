@@ -64,7 +64,8 @@
 <div data-role="page" id="page2">
     <div data-role="header" data-theme="b">
         <h1> </h1>
-        <a data-rel="forward" data-icon="forward" onclick= "Storage()"> Erase Localstorage</a> 
+<!--        <a data-rel="forward" data-icon="forward" onclick= "localStorage.clear()"> Erase Localstorage</a> -->
+        
 <!--                <a id="#boutton"> boute</a> -->
 
 <!--
@@ -141,7 +142,7 @@
     <!--    <a data-rel="back" data-icon="back">Carte</a> conflict with ifram, so not use this is liste des marchands is in iframe-->
 <!--    <a data-id="persistent" href="#page2" data-transition="slide" data-icon="back"> Carte</a>-->
     <a data-id="persistent" href="#page2" data-transition="slide"> Carte</a>
-    <a data-id="persistent" href="#page5" data-transition="slide"> Offres spéciales</a>
+    <a data-id="persistent" href="#page5" data-transition="slide" onclick="offres()"> Offres spéciales</a>
 <!--
     <div data-role="navbar"> 
         <ul>
@@ -160,70 +161,70 @@
 <!--    *************************************************-->
     <div id="status-message" data-role="collapsible">
                <h1>Restauration</h1> 
-        <div id="Restauration"></div>
+        <div id="restauration"></div>
+<!--
                 <script>
-//        function ListeDesMarchands(){
-//            $.getJSON("http://amcreatives.ca/files/test.json",function(data,status){
-//             alert(data[0].Marchand1);
-//              alert(status);
-//            });
-//        }
+        function ListeDesMarchands(){
+            $.getJSON("http://amcreatives.ca/files/test.json",function(data,status){
+             alert(data[0].Marchand1);
+              alert(status);
+            });
+        }
         
         </script>
+-->
         
+<!--
            <div style=" overflow: hidden; margin: 5px auto; max-width: 80%;">
                <iframe id="myFrame"  style="border: 0px none; margin-left: -8px; height: 925px; margin-top: -5px; width: 530px;" id="Service" scrolling="no">
                </iframe>
                <br>
            </div>  
+-->
         
 <!--Continue this..-->
-        <script type="text/javascript" charset="utf-8"> 
-//            listeDesMarchands.addEventListener("on", onDeviceReady, false);
-            
-        function events() {
-            var url = "http://amcreatives.ca/VircaEvenements/";
-            var target = "_self";
-            var options = "location=yes,clearcache=yes";
-            
-            inAppBrowserRef = cordova.InAppBrowser.open(url, target, options);
-            inAppBrowserRef.addEventListener('loadstart', loadStartCallBack);
-            
-            function loadStartCallBack() {
-                alert("yupi");
-                $('#status-message').text("loading please wait ...");
-            }//listeDesMarchands
 
-            } //onDeviceReady
-        </script>
     </div>
 <!--    ***************   Service page    ***************-->
 <!--    *************************************************-->
     <div data-role="collapsible">
         <h1>Service</h1>
+        <div id="service"></div>
+
+<!--
         <div style=" overflow: hidden; margin: 5px auto; max-width: 80%;">
                <iframe  src="http://amcreatives.ca/VircaPages/" style="border: 0px none; margin-left: -8px; height: 2155px; margin-top: -925px; width: 530px;" scrolling="no">
                </iframe>
         </div>
+-->
     </div> 
 <!--    ****************  Mobilier page  ****************-->
 <!--    *************************************************--> 
     <div data-role="collapsible">
         <h1>Mobilier</h1>
+        <div id="mobilier"></div>
+        
+<!--
         <div style=" overflow: hidden; margin: 5px auto; max-width: 80%;">
                <iframe  src="http://amcreatives.ca/VircaPages/" style="border: 0px none; margin-left: -8px; height: 2445px; margin-top: -2165px; width: 530px;" scrolling="no">
                </iframe>
         </div>
+-->
     </div>
     
 <!--    ***************    Avantages provinciaux page    ***************-->
 <!--    ****************************************************************--> 
     <div data-role="collapsible">
         <h1>Avantages provinciaux</h1>
+        <div id="provinciaux"></div>
+        
+<!--
         <div style=" overflow: hidden; margin: 5px auto; max-width: 90%;">
                <iframe  src="http://amcreatives.ca/VircaPages/" style="border: 0px none; margin-left: -8px; height: 6120px; margin-top: -2450px; width: 530px;" scrolling="no">
                </iframe>
         </div>
+-->
+        
     </div>
 </div>
 
@@ -249,13 +250,34 @@
         <a data-id="persistent" href="#page2" data-transition="slide" > Carte</a>
     </div>
     <div>
+        
+        <script type="text/javascript" charset="utf-8"> 
+//            listeDesMarchands.addEventListener("on", onDeviceReady, false);
+            
+        function events() {
+            var url = "http://amcreatives.ca/VircaEvenements/";
+            var target = "_self";
+            var options = "location=yes,clearcache=yes";
+            
+            inAppBrowserRef = cordova.InAppBrowser.open(url, target, options);
+            inAppBrowserRef.addEventListener('loadstart', loadStartCallBack);
+            
+            function loadStartCallBack() {
+//                alert("yupi");
+                $('#status-message').text("En chargement ...");
+            }//listeDesMarchands
+
+            } //onDeviceReady
+        </script>
+        
+<!--
     <div style=" overflow: hidden; margin: 5px auto; max-width: 80%;">
     <iframe  src="http://www.ccstgeorges.com/" style="border: 0px none; margin-left: -20px; height: 1012px; margin-top: -740px; width: 630px;">
     </iframe>
     </div>
-
-        http://amcreatives.ca/VircaEvenements/
-
+-->
+        
+        
         <!--    ***************       Footer      ***************-->
     <!--    *************************************************--> 
         <div id="footer_2" data-role="footer" data-type="footer" data-position="fixed"  style="overflow:hidden; text-align: center;">
@@ -279,16 +301,38 @@
         <a data-id="persistent" href="#page3" data-transition="slide"> Liste des marchands</a>
     </div>
 <div>
+    
+        <script type="text/javascript" charset="utf-8"> 
+//            listeDesMarchands.addEventListener("on", onDeviceReady, false);
+            
+        function offres() {
+            var url = "http://amcreatives.ca/VircaEvenements/";
+            var target = "_blank";
+            var options = "location=yes,clearcache=yes";
+            
+            inAppBrowserRef = cordova.InAppBrowser.open(url, target, options);
+            inAppBrowserRef.addEventListener('loadstart', loadStartCallBack);
+            
+            function loadStartCallBack() {
+//                alert("yupi");
+                $('#status-message').text("En chargement ...");
+            }//listeDesMarchands
+
+            } //onDeviceReady
+        </script>
+    
 <!--
     <div style=" overflow: hidden; margin: 5px auto; max-width: 80%;">
     <iframe  src="http://www.ccstgeorges.com/" style="border: 0px none; margin-left: -20px; height: 1012px; margin-top: -740px; width: 630px;">
     </iframe>
     </div>
 -->
+<!--
     <div style=" overflow: hidden; margin: 5px auto; max-width: 90%;">
         <iframe  src="http://amcreatives.ca/VircaEvenements" style="border: 0px none; width: 100%;" scrolling="no">
         </iframe>
     </div>
+-->
     
     
 <!--    ***************       Footer      ***************-->

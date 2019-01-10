@@ -1,29 +1,78 @@
 var tentative = 0;
 var nouveuMessage;
 
+//function ListeDesMarchands(){
+//$.ajax({
+//  dataType: "json",
+//  url: "https://s3-eu-west-1.amazonaws.com/virtualcard/marchand.json",
+////  data: data,
+//  success: function(data) {
+//$('#Restauration').empty();
+//            $('#Restauration').append(data[0].restauration);
+//            
+//            $('#Service').empty();
+//            $('#Service').append(data[0].Service);
+//                
+//            $('#Mobilier').empty();
+//            $('#Mobilier').append(data[0].Mobilier);
+//                
+//            $('#provinciaux').empty();
+//            $('#provinciaux').append(data[0].provinciaux);
+//
+//             console.log(data[0]);  }
+//});
 
-        function ListeDesMarchands(){
-            $.getJSON("https://s3-eu-west-1.amazonaws.com/virtualcard/marchand.json",function(data,status){
-                $('#Restauration').append(Construct(data));
-//                $('#Restauration').listview('refresh')
-             console.log(data[0].Marchand1);
-//              alert(status);
-            });
-        };
-function Construct(data){
-    return 
-        +data[0].Marchand1 ;
+//};
+function ListeDesMarchands(){
+    $.getJSON("https://s3-eu-west-1.amazonaws.com/virtualcard/restauration.json",function(data,status){
+            $('#restauration').empty();
+            $('#restauration').append(data[0].restauration);
+            $('#restauration').listview('refresh'); /* to refresh the div */
+
+    });
+    
+    $.getJSON("https://s3-eu-west-1.amazonaws.com/virtualcard/provinciaux.json",function(data,status){
+            $('#provinciaux').empty();
+            $('#provinciaux').append(data[0].provinciaux);
+            $('#provinciaux').listview('refresh');
+
+    });
+    
+    $.getJSON("https://s3-eu-west-1.amazonaws.com/virtualcard/mobilier.json",function(data,status){
+            $('#mobilier').empty();
+            $('#mobilier').append(data[0].mobilier);
+            $('#mobilier').listview('refresh');
+
+    });
+    
+    $.getJSON("https://s3-eu-west-1.amazonaws.com/virtualcard/service.json",function(data,status){
+            $('#service').empty();
+            $('#service').append(data[0].service);
+            $('#service').listview('refresh');
+    });
+    
+//    location.reload(true);
 };
 
-function Storage(){
+//function Construct(data){
+////    for(i=0; i<data.length; i++){
+////        for(j=0;j<data[i].length;j++){
+////            $('#Restauration').append(Construct(data[i][j]));
+////         }
+////        }
+//
+//    return data[0].Marchand1;
+//};
+
+//function Storage(){
 //$('#myFrame').attr('src', "http://amcreatives.ca/VircaPages/");
 //document.getElementsByTagName('iframe')src="http://amcreatives.ca/VircaPages/"
     
-   $.getJSON("http://amcreatives.ca/files/test.json",function(data){
-     alert(data[0].Marchand1);
-      alert(status);
-
-    });
+//   $.getJSON("http://amcreatives.ca/files/test.json",function(data){
+//     alert(data[0].Marchand1);
+//      alert(status);
+//
+//    });
     
 //      $.getJSON("http://amcreatives.ca/files/test.json", function(result){
 //    $.each(result, function(i, field){
@@ -32,7 +81,7 @@ function Storage(){
 //  });
     
 
-}
+//}
 
 //$(document).ready(function() {
 //    $('#myFrame').attr('src', "http://amcreatives.ca/VircaPages/");
