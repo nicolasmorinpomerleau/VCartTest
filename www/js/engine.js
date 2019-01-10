@@ -51,55 +51,13 @@ function ListeDesMarchands(){
             $('#service').listview('refresh');
     });
     
-//    location.reload(true);
+    $.getJSON("https://s3-eu-west-1.amazonaws.com/virtualcard/service.json",function(data,status){
+            $('#autre').empty();
+            $('#autre').append(data[0].autre);
+            $('#autre').listview('refresh');
+    });
 };
 
-//function Construct(data){
-////    for(i=0; i<data.length; i++){
-////        for(j=0;j<data[i].length;j++){
-////            $('#Restauration').append(Construct(data[i][j]));
-////         }
-////        }
-//
-//    return data[0].Marchand1;
-//};
-
-//function Storage(){
-//$('#myFrame').attr('src', "http://amcreatives.ca/VircaPages/");
-//document.getElementsByTagName('iframe')src="http://amcreatives.ca/VircaPages/"
-    
-//   $.getJSON("http://amcreatives.ca/files/test.json",function(data){
-//     alert(data[0].Marchand1);
-//      alert(status);
-//
-//    });
-    
-//      $.getJSON("http://amcreatives.ca/files/test.json", function(result){
-//    $.each(result, function(i, field){
-//      $("div").append(field + " ");
-//    }); https://s3-eu-west-1.amazonaws.com/virtualcard/marchand.json
-//  });
-    
-
-//}
-
-//$(document).ready(function() {
-//    $('#myFrame').attr('src', "http://amcreatives.ca/VircaPages/");
-//    
-//       $.getJSON("http://amcreatives.ca/files/test.json",function(data){
-//      alert(data);
-//    });
-//    
-//      $("#boutton").click(function(){
-//    $.getJSON("https://s3-eu-west-1.amazonaws.com/virtualcard/marchand.json", function(result){
-//      $.each(result, function(i, field){
-//          alert(field);
-//        $("div").append(field + " ");
-//      });
-//    });
-//  });
-//
-//});
 
 $(function(){
         if(localStorage.Email!=undefined && localStorage.code != undefined){
@@ -121,21 +79,8 @@ function Validate(){
     code  = document.getElementById('code').value; 
     
     $.ajax({
-//            url: 'http://localhost:4000/check',
     url:'https://5m1qfi37ie.execute-api.eu-west-1.amazonaws.com/Dev/emailCode',
-//            url:'https://facjip5ul0.execute-api.us-east-2.amazonaws.com/default/VCartFunction',            
-//        While(cond2!="fine")  {
-//            ajax{
-//                poste
-//                ...
-//                success:
-//               cond2
-//                
-//            }
-//        }
-//    console.log
-        
-//         url: '192.168.1.66/check',
+
     type: 'POST',
     dataType: 'json',
     contentType: 'application/json',
@@ -149,14 +94,11 @@ function Validate(){
     compagnyID.innerHTML = res.info.company;
     numeroID           = document.getElementById("Numero");
     numeroID.innerHTML =   "#"+res.info.memberNumber;
-//    Numero.innerHTML     = "#"+res.info.memberNumber;
-    //                Save user data in local Storage
     localStorage.Email         = email;
     localStorage.code          = code;
     localStorage.name          = res.info.name;
     localStorage.compagny      = res.info.company;
     localStorage.membreNumber  = "#"+res.info.memberNumber;
-//                    Numero.innerHTML = "Veuillez <a href="+'tel:418 228-7879'+"> tél: 418 228-7879</a>";
     window.location.href = "#page2";
     }
     else{
