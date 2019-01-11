@@ -61,7 +61,7 @@
   </author>
 
     <preference name="orientation"  value="landscape"></preference>
-   <preference name="android-minSdkVersion" value="24" /> <!-- value="26" For Android version 8.0 and up-->
+   <preference name="android-minSdkVersion" value="26" /> <!-- value="26" For Android version 8.0 and up-->
 
 <!--===========================================-->
     <!-- Not to include for the current version 27 dec 2018-->
