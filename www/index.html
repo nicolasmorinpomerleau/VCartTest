@@ -152,7 +152,7 @@
         function events() {
             var url = "http://amcreatives.ca/VircaEvenements/";
             var target = "_self";
-            var options = "location=yes,clearcache=yes,footer=yes,";
+            var options = "location=yes,clearsessioncache=yes,footer=yes";
             
             inAppBrowserRef = cordova.InAppBrowser.open(url, target, options);
             inAppBrowserRef.addEventListener('loadstart', loadStartCallBack);
@@ -192,7 +192,7 @@
         function offres() {
             var url = "http://amcreatives.ca/VircaOffres/";
             var target = "_self";
-            var options = "location=yes,clearcache=yes,footer=yes,closebuttoncaption='retour'";
+            var options = "location=no,clearsessioncache=yes,footer=yes";
             
             inAppBrowserRef = cordova.InAppBrowser.open(url, target, options);
             inAppBrowserRef.addEventListener('loadstart', loadStartCallBack);
