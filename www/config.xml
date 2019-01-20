@@ -7,7 +7,11 @@
 <access origin="https://5m1qfi37ie.execute-api.eu-west-1.amazonaws.com/Dev/emailCode"/>
 <access origin="https://s3-eu-west-1.amazonaws.com/virtualcard/*"/>
 
+<!--================================================================================-->
 <!--    ====================   Set up Splash Screen ==================== -->
+<!--================================================================================-->
+    	
+<plugin name="cordova-plugin-splashscreen" source="npm" />
 <!--    ==================== iPhone ========================-->    
 <!-- iPhone and iPod touch -->
 <!--
@@ -40,18 +44,21 @@
 -->
 <!--    ==================== Android ========================-->
 
-    
+<splash src="splash.png" />
+<!--================================================================================-->
+<!--================================================================================-->
+
 <!-- versionCode is optional and Android only -->
 <plugin name="cordova-plugin-whitelist" source="npm"/>
     
 <!--    for the interaciton and the management of the iframes-->
-<plugin name="cordova-plugin-inappbrowser"/>
+<plugin name="cordova-plugin-inappbrowser" source="npm"/>
  
 <!--    Cache Clear-->
 <!--<plugin name="cordova-plugin-cache-clear" source="npm"/>-->
     
 <!--    From OneSignal Web site Doc-->
-<gap:plugin name="onesignal-cordova-plugin" spec="2.4.5" source="npm" />
+<gap:plugin name="onesignal-cordova-plugin"  source="npm" /> <!-- don't put the spec to always take latest Auto -->
     
 <name>CCSG</name>
 <allow-intent href="http://*/*" />
