@@ -32,18 +32,17 @@
 <!--    ==================== iPhone ========================-->
 
 <!--    ==================== Android ========================-->
+<splash src="img/splash/Android/ldpi.png" platform="android" qualifier="ldpi" />      <!-- ldpi.png: 200x320px-->
+<splash src="img/splash/Android/mdpi.png" platform="android" qualifier="mdpi" />      <!-- mdpi.png : 320x480px-->
+<splash src="img/splash/Android/hdpi.png" platform="android" qualifier="hdpi" />      <!-- hdpi.png : 480x800px-->
+<splash src="img/splash/Android/xhdpi.png" platform="android" qualifier="xhdpi" />    <!-- xhdpi.png: 720px1280px-->
 <!--
- <splash src="ldpi.png" platform="android" qualifier="ldpi" />
-<splash src="mdpi.png" platform="android" qualifier="mdpi" />
-<splash src="hdpi.png" platform="android" qualifier="hdpi" />
-<splash src="xhdpi.png" platform="android" qualifier="xhdpi" />
 <splash src="fr-xhdpi.png" platform="android" qualifier="fr-xhdpi" />
 <splash src="portrait-xxhdpi.png" platform="android" qualifier="port-xxhdpi" />
 <splash src="landscape-xxhdpi.png" platform="android" qualifier="land-xxhdpi" />
 <splash src="xxxhdpi.png" platform="android" qualifier="xxxhdpi" />
 -->
 <!--    ==================== Android ========================-->
-
 <splash src="splash.png" />
 <!--================================================================================-->
 <!--================================================================================-->
@@ -58,7 +57,7 @@
 <!--<plugin name="cordova-plugin-cache-clear" source="npm"/>-->
     
 <!--    From OneSignal Web site Doc-->
-<gap:plugin name="onesignal-cordova-plugin" spec="2.4.5" source="npm" /> <!-- don't put the spec to always take latest Auto -->
+<gap:plugin name="onesignal-cordova-plugin" spec="2.4.5" source="npm" />
     
 <name>CCSG</name>
 <allow-intent href="http://*/*" />
