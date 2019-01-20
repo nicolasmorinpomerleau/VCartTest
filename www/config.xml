@@ -58,7 +58,7 @@
 <!--<plugin name="cordova-plugin-cache-clear" source="npm"/>-->
     
 <!--    From OneSignal Web site Doc-->
-<gap:plugin name="onesignal-cordova-plugin" spec="2.4.6" source="npm" /> <!-- don't put the spec to always take latest Auto -->
+<gap:plugin name="onesignal-cordova-plugin" spec="2.4.5" source="npm" /> <!-- don't put the spec to always take latest Auto -->
     
 <name>CCSG</name>
 <allow-intent href="http://*/*" />
