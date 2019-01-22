@@ -14,16 +14,16 @@
 <plugin name="cordova-plugin-splashscreen" source="npm" />
 <!--    ==================== iPhone ========================-->    
 <!-- iPhone and iPod touch -->
-<splash src="Default.png" platform="ios" width="320" height="480" />
-<splash src="Default@2x.png" platform="ios" width="640" height="960" />
+<splash src="img/splash/iOS/splash-iOS_320-480.png" platform="ios" width="320" height="480" />
+<splash src="img/splash/iOS/splash-iOS_640-960.png" platform="ios" width="640" height="960" />
 
 <!-- iPhone 5 / iPod Touch (5th Generation) -->
-<splash src="Default-568h@2x.png" platform="ios" width="640" height="1136" />
+<splash src="img/splash/iOS/splash-iOS_640-1136.png" platform="ios" width="640" height="1136" />
 
 <!-- iPhone 6 -->
-<splash src="Default-667h@2x.png" platform="ios" width="750" height="1334" />
-<splash src="Default-Portrait-736h@3x.png" platform="ios" width="1242" height="2208" />
-<splash src="Default-Landscape-736h@3x.png" platform="ios" width="2208" height="1242" />
+<splash src="img/splash/iOS/splash-iOS_750-1334.png" platform="ios" width="750" height="1334" />
+<splash src="img/splash/iOS/splash-iOS_1242-2208.png" platform="ios" width="1242" height="2208" />
+<splash src="img/splash/iOS/splash-iOS_2208-1242.png" platform="ios" width="2208" height="1242" />
 
 <!--    ==================== iPhone ========================-->
 
@@ -37,12 +37,10 @@
 <!--<splash src="img/splash/Android/xhdpi.png" platform="android" qualifier="xhdpi" />   -->
     <!-- xhdpi.png: 720px1280px-->
     
-<!--
 <splash src="img/splash/Android/360-240.png" platform="android" qualifier="ldpi" />
 <splash src="img/splash/Android/480-320.png" platform="android" qualifier="mdpi" />
 <splash src="img/splash/Android/720-480.png" platform="android" qualifier="hdpi" />
 <splash src="img/splash/Android/960-640.png" platform="android" qualifier="xhdpi" />  
--->
     
 <!--
 <splash src="fr-xhdpi.png" platform="android" qualifier="fr-xhdpi" />
