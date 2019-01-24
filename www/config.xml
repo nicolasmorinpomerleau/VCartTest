@@ -63,7 +63,7 @@
 <!--<plugin name="cordova-plugin-cache-clear" source="npm"/>-->
     
 <!--    From OneSignal Web site Doc-->
-<plugin name="cordova-android-support-gradle-release">
+<plugin name="cordova-android-support-gradle-release"/>
 
 <gap:plugin name="onesignal-cordova-plugin" spec="2.4.5" source="npm" />
     
